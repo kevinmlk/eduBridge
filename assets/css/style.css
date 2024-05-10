@@ -1,0 +1,58 @@
+:root {
+  --theme-off-white: #F9FAFD;
+  --theme-white: #FFFFFF;
+  --theme-purple: #B3ADF7;
+  --theme-pink: #EE707B;
+  --theme-green: #90D0BA;
+  --theme-blue: #7FCFE4;
+  --theme-black-1: #1C1A23;
+  --theme-black-2: #2D2926;
+  --theme-gray-1: #575451;
+  --theme-gray-2: #817F7D;
+  --theme-gray-3: #ABA9A8;
+  --theme-gray-4: #D5D4D4;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.montserrat-display {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: x-large;
+}
+
+.montserrat-headline {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: larger;
+}
+
+.montserrat-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: large;
+}
+
+.montserrat-body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.montserrat-label {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: small;
+}

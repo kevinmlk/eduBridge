@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="./assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- Tab title -->
   <title>Welkom | eduBridge</title>
 </head>
@@ -17,7 +21,7 @@
   <!-- Start header content -->
   <header>
     <!-- Navbar -->
-    <nav class="navbar fixed-top">
+    <nav class="navbar fixed-top montserrat-label">
       <div class="container">
         <!-- Language switcher container -->
         <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-2 mb-5">

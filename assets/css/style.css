@@ -29,6 +29,31 @@ body {
   padding: 4px;
 }
 
+#hero-image-container {
+  height: 80vh;;
+}
+
+#dark-overlay {
+  background-color: var(--theme-black-1);
+  width: 100%;
+  height: 80vh;
+}
+
+#hero-image-content {
+  margin-left: 320px;
+  max-width: 370px;
+  color: var(--theme-white);
+}
+
+#hero-image {
+  height: 80vh;
+  /* width: 100%; */
+  background-image: url('../images/index-hero-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 .active-lang {
   background-color: var(--theme-gray-2);
   color: var(--theme-white) !important;

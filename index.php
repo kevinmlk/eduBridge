@@ -19,9 +19,9 @@
 </head>
 <body>
   <!-- Start header content -->
-  <header>
+  <header class="mb-5">
     <!-- Navbar -->
-    <nav class="navbar fixed-top">
+    <nav class="navbar">
       <div class="container montserrat-label">
         <!-- Language switcher container -->
         <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-5 mt-2">
@@ -51,7 +51,25 @@
 
   <!-- Start main content -->
   <main>
+    <section id="hero-image-container" class="position-relative">
+      <!-- Dark overlay -->
+      <div id="dark-overlay" class="position-absolute opacity-25"></div>
+      
+      <!-- Hero image content -->
+      <div id="hero-image-content" class="position-absolute top-50 start-0 translate-middle-y">
+        <h1 class="montserrat-display mb-5">Ontgrendel uw educatieve reis</h1>
+        <p class="montserrat-body">
+          Bij eduBridge geloven wij dat onderwijs voor iedereen toegankelijk moet zijn.
+        </p>
+        <p class="montserrat-body">
+          Of u nu een student, een ouder of een volwassen leerling bent, wij zijn er om u
+          bij elke stap te ondersteunen.
+        </p>
+      </div>
 
+      <!-- hero image background -->
+      <div id="hero-image"></div>
+    </section>
   </main>
 
   <!-- Start footer content -->

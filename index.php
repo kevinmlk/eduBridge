@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- Tab title -->
-  <title>Welkom | eduBridge</title>
+  <title>Welkom bij eduBridge | eduBridge Belgium</title>
 </head>
 <body>
   <!-- Start header content -->
@@ -25,10 +25,10 @@
       <div class="container montserrat-label">
         <!-- Language switcher container -->
         <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-5 mt-2">
-          <ul id="language-switcher" class="d-flex gap-2 p-0 mb-0 montserrat-body">
+          <ul id="language-switcher" class="d-flex gap-2 p-0 mb-0">
             <li><a href="#">EN</a></li>
             <li><a href="#">FR</a></li>
-            <li><a href="#">NL</a></li>
+            <li><a href="#" class="active-lang">NL</a></li>
             <li><a href="#">DE</a></li>
           </ul>
           <span>Official information and services: www.belgium.be</span>
@@ -36,7 +36,7 @@
 
         <!-- Navigation container -->
         <div class="d-flex w-100 justify-content-between align-items-center">
-          <a href="index.php"><img src="" alt="Logo"></a>
+          <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
           <ul class="nav montserrat-title">
             <li class="nav-item"><a href="about.php" class="nav-link">Over</a></li>
             <li class="nav-item"><a href="news.php" class="nav-link">Nieuws</a></li>

@@ -17,10 +17,29 @@
   color: var(--theme-black-1);
 }
 
+body {
+  background-color: var(--theme-off-white);
+}
+
 
 /* ID'S & CLASSES */
-ul#language-switcher li.nav-item a.nav-link {
-  color: var(--theme-black-1) !important;
+#language-switcher li a {
+  text-decoration: none;
+  color: var(--theme-black-1);
+  padding: 4px;
+}
+
+.active-lang {
+  background-color: var(--theme-gray-2);
+  color: var(--theme-white) !important;
+}
+
+.navbar-brand img {
+  height: 48px;
+}
+
+.nav-link {
+  color: var(--theme-black-1);
 }
 
 .btn.btn-primary {

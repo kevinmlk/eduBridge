@@ -14,7 +14,22 @@
 }
 
 * {
-  font-family: "Montserrat", sans-serif;
+  color: var(--theme-black-1);
+}
+
+
+/* ID'S & CLASSES */
+ul#language-switcher li.nav-item a.nav-link {
+  color: var(--theme-black-1) !important;
+}
+
+.btn.btn-primary {
+  padding: 10px 24px 10px 16px;
+  border-radius: 36px;
+  font-weight: 500;
+  background-color: var(--theme-green);
+  border: none;
+  color: var(--theme-black-1);
 }
 
 .montserrat-display {

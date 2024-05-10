@@ -21,11 +21,11 @@
   <!-- Start header content -->
   <header>
     <!-- Navbar -->
-    <nav class="navbar fixed-top montserrat-label">
-      <div class="container">
+    <nav class="navbar fixed-top">
+      <div class="container montserrat-label">
         <!-- Language switcher container -->
-        <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-2 mb-5">
-          <ul class="d-flex gap-2 p-0 mb-0">
+        <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-5 mt-2">
+          <ul id="language-switcher" class="d-flex gap-2 p-0 mb-0 montserrat-body">
             <li><a href="#">EN</a></li>
             <li><a href="#">FR</a></li>
             <li><a href="#">NL</a></li>
@@ -35,13 +35,14 @@
         </div>
 
         <!-- Navigation container -->
-        <div class="d-flex w-100 justify-content-between">
-          <img src="" alt="Logo">
-          <ul class="d-flex gap-2 mb-0">
-            <li><a href="">Over</a></li>
-            <li><a href="">Nieuws</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Contact</a></li>
+        <div class="d-flex w-100 justify-content-between align-items-center">
+          <a href="index.php"><img src="" alt="Logo"></a>
+          <ul class="nav montserrat-title">
+            <li class="nav-item"><a href="about.php" class="nav-link">Over</a></li>
+            <li class="nav-item"><a href="news.php" class="nav-link">Nieuws</a></li>
+            <li class="nav-item"><a href="faq.php" class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+            <li class="nav-item ms-3"><a href="login.php" class="btn btn-primary"><i class="bi bi-person-circle me-2"></i>Aanmelden</a></li>
           </ul>
         </div>
       </div>

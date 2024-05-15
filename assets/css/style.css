@@ -43,6 +43,16 @@ body {
   font-family: 'Montserrat Regular', sans-serif;
 }
 
+ul, p {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--theme-black-1);
+}
+
 /* ID'S & CLASSES */
 #language-switcher li a {
   text-decoration: none;
@@ -55,8 +65,34 @@ body {
   color: var(--theme-white) !important;
 }
 
+#notification-container a {
+  text-decoration: none;
+  color: var(--theme-black-1);
+}
+
+#notification-container a:nth-child(1)::after {
+  content: '|';
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 #notification-container a i.bi {
   height: 40px !important;
+}
+
+#roadmap-container {
+  background-image: url('../images/svg/roadmap.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#footer-links {
+  background-color: var(--theme-blue);
+}
+
+#footer-legal {
+  font-size: .8em;
 }
 
 .navbar-brand img {

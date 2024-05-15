@@ -49,17 +49,19 @@
     </nav>
   </header>
 
-  <!-- Start main content -->
-  <main>
-    <section class="container">
-      <h2 class="text-center">Welkom terug, Lisa!</h2>
+  <!-- Start main -->
+  <main class="mb-5">
+    <section>
+      <h2 class="text-center mt-5">Welkom terug, Lisa!</h2>
+      <!-- Roadmap container -->
+      <div id="roadmap-container" class="mt-5">
+
+      </div>
     </section>
   </main>
 
-  <!-- Start footer content -->
-  <footer>
-
-  </footer>
+  <!-- Start footer -->
+  <?php include_once(__DIR__ . '/includes/footer.inc.php'); ?>
 
   <!-- Links JS scripts -->
   <script scr="./assets/js/app.js"></script>

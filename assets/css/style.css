@@ -91,6 +91,14 @@ footer a {
   background-color: var(--theme-blue);
 }
 
+#footer-navigation li a {
+  font-family: 'Montserrat Medium', sans-serif;
+}
+
+#footer-socials li a i {
+  font-size: 1.4em;
+}
+
 #footer-legal {
   font-size: .8em;
 }

@@ -1,7 +1,7 @@
 <footer>
     <div id="footer-links">
       <div class="container d-flex justify-content-between align-items-center pt-5 pb-5">
-        <ul class="d-flex gap-4">
+        <ul id="footer-navigation" class="d-flex gap-4">
           <li><a href="#">Home</a></li>
           <li><a href="#">Over</a></li>
           <li><a href="#">Nieuws</a></li>
@@ -14,7 +14,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
   
-        <ul class="d-flex gap-3">
+        <ul id="footer-socials" class="d-flex gap-4">
           <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
           <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
           <li><a href="#"><i class="bi bi-facebook"></i></a></li>

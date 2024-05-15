@@ -13,14 +13,35 @@
   --theme-gray-4: #D5D4D4;
 }
 
-* {
-  color: var(--theme-black-1);
+/* FONTS */
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../fonts/static/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url('../fonts/static/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Semibold';
+  src: url('../fonts/static/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* GENERAL */
 
 body {
   background-color: var(--theme-off-white);
+  color: var(--theme-black-1);
+  font-family: 'Montserrat Regular', sans-serif;
 }
-
 
 /* ID'S & CLASSES */
 #language-switcher li a {
@@ -29,34 +50,13 @@ body {
   padding: 4px;
 }
 
-#hero-image-container {
-  height: 80vh;;
-}
-
-#dark-overlay {
-  background-color: var(--theme-black-1);
-  width: 100%;
-  height: 80vh;
-}
-
-#hero-image-content {
-  margin-left: 320px;
-  max-width: 370px;
-  color: var(--theme-white);
-}
-
-#hero-image {
-  height: 80vh;
-  /* width: 100%; */
-  background-image: url('../images/index-hero-image.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-
 .active-lang {
   background-color: var(--theme-gray-2);
   color: var(--theme-white) !important;
+}
+
+#notification-container a i.bi {
+  height: 40px !important;
 }
 
 .navbar-brand img {
@@ -65,6 +65,14 @@ body {
 
 .nav-link {
   color: var(--theme-black-1);
+  font-family: 'Montserrat Medium', sans-serif;
+}
+
+.nav-item .nav-link.active::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: var(--theme-blue);
 }
 
 .btn.btn-primary {
@@ -74,44 +82,4 @@ body {
   background-color: var(--theme-green);
   border: none;
   color: var(--theme-black-1);
-}
-
-.montserrat-display {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: x-large;
-}
-
-.montserrat-headline {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: larger;
-}
-
-.montserrat-title {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: large;
-}
-
-.montserrat-body {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: medium;
-}
-
-.montserrat-label {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: small;
 }

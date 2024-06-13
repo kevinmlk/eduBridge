@@ -25,7 +25,7 @@
 
     <div id="footer-legal" class="container d-flex justify-content-between pt-4 pb-4">
       <p>&#169; 2024 eduBridge</p>
-      <ul class="d-flex gap-3">
+      <ul class="d-flex gap-5">
         <li><a href="#">Toegankelijkheidsverklaring</a></li>
         <li><a href="#">Cookiebeleid</a></li>
         <li><a href="#">Privacyverklaring</a></li>

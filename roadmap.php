@@ -37,12 +37,12 @@
         <div class="d-flex w-100 justify-content-between align-items-center">
           <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
             <ul class="nav d-flex gap-2">
-              <li class="nav-item"><a href="./about.php" aria-page="current" class="nav-link active">Over</a></li>
-              <li class="nav-item"><a href="./news.php" class="nav-link">Nieuws</a></li>
-              <li class="nav-item"><a href="./faq.php" class="nav-link">FAQ</a></li>
-              <li class="nav-item"><a href="./contact.php" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="./about.php" aria-page="current" class="nav-link active">Roadmap</a></li>
+              <li class="nav-item"><a href="./news.php" class="nav-link">Simulator</a></li>
+              <li class="nav-item"><a href="./faq.php" class="nav-link">Procedures</a></li>
+              <li class="nav-item"><a href="./contact.php" class="nav-link">Info hub</a></li>
               <li class="nav-item"><a href="./contact.php" class="nav-link">Profiel</a></li>
-              <li class="nav-item ms-3"><a href="./login.php" class="btn btn-primary"><i class="bi bi-person-circle me-2"></i>Aanmelden</a></li>
+              <li class="nav-item ms-3"><a href="./login.php" class="btn btn-primary"><i class="bi bi-person-circle me-2"></i>Kinderprofiel</a></li>
             </ul>
         </div>
       </div>
@@ -51,20 +51,11 @@
 
   <!-- Start main -->
   <main class="mb-5">
-    <section id="home-hero" class="position-relative">
-      <div class="bg-overlay"></div>
-      <div class="container d-flex flex-column gap-4 position-absolute top-50 start-50 translate-middle">
-      <div>
-        <h1>Ontgrendel uw<br> educatieve reis</h1>
-        <span class="tag-line"></span>
-      </div>
-      <p>
-      Bij eduBridge geloven we dat onderwijs voor iedereen toegankelijk moet zijn.
-      </p>
-      
-      <p>
-      Of u nu een student, een ouder of een volwassen leerling bent, wij zijn er om u bij elke stap te ondersteunen.
-      </p>
+    <section>
+      <h2 class="text-center mt-5">Welkom terug, Lisa!</h2>
+      <!-- Roadmap container -->
+      <div id="roadmap-container" class="mt-5">
+
       </div>
     </section>
   </main>

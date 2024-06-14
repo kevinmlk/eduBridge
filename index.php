@@ -15,22 +15,21 @@
 </head>
 <body>
   <!-- Start header content -->
-  <header class="mb-5">
+  <header class="mb-4">
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
         <!-- Language switcher container -->
-        <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-5 mt-2">
+        <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
           <ul id="language-switcher" class="d-flex gap-2 p-0 mb-0">
             <li><a href="#">EN</a></li>
             <li><a href="#">FR</a></li>
             <li><a href="#" class="active-lang">NL</a></li>
             <li><a href="#">DE</a></li>
           </ul>
-          <div id="notification-container">
-            <a href=""><i class="bi bi-bell me-2"></i>Notificaties(3)</a>
-            <a href=""><i class="bi bi-box-arrow-right me-2"></i>Afmelden</a>
-          </div>
+          <p class="fs-6">
+            Officiële informatie en diensten: www.belgium.be
+          </p>
         </div>
 
         <!-- Navigation container -->
@@ -51,12 +50,13 @@
 
   <!-- Start main -->
   <main class="mb-5">
+    <!-- Hero section -->
     <section id="home-hero" class="position-relative">
       <div class="bg-overlay"></div>
       <div class="container d-flex flex-column gap-4 position-absolute top-50 start-50 translate-middle">
       <div>
         <h1>Ontgrendel uw<br> educatieve reis</h1>
-        <span class="tag-line"></span>
+        <span class="tag-line line-pink"></span>
       </div>
       <p>
       Bij eduBridge geloven we dat onderwijs voor iedereen toegankelijk moet zijn.
@@ -67,6 +67,19 @@
       </p>
       </div>
     </section>
+
+    <!-- Intro section -->
+     <section class="container d-flex justify-content-between align-items-center mt-5">
+      <img src="./assets/images/home-intro-image.jpg" alt="" class="w-50 rounded">
+      <div class="d-flex flex-column gap-4">
+        <div>
+          <h2>Wat is eduBridge?</h2>
+          <span class="tag-line line-blue"></span>
+        </div>
+        <p>EduBridge is een innovatief platform dat alle beschikbare educatieve  hulpmiddelen en ondersteuning op één plek samenbrengt. Ons doel is om  het proces van het vinden en aanvragen van educatieve ondersteuning  eenvoudig en transparant te maken. </p>
+        <p>Of je nu op zoek bent naar financiële  hulp, informatie over cursussen, of begeleiding bij je leertraject,  EduBridge biedt een gepersonaliseerde ervaring die speciaal is afgestemd  op jouw behoeften.</p>
+      </div>
+     </section>
   </main>
 
   <!-- Start footer -->

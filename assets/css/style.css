@@ -48,9 +48,16 @@ h1 {
   font-size: 3em;
 }
 
+h2 {
+  font-family: 'Montserrat Medium', sans-serif;
+  font-size: 2.4em;
+}
+
 p {
   font-size: 1.2em;
   max-width: 600px;
+  line-height: 150%;
+  font-family: 'Montserrat Regular', sans-serif;
 }
 
 ul, p {
@@ -122,6 +129,10 @@ footer a {
   font-family: 'Montserrat Medium', sans-serif;
 }
 
+.nav-link:hover {
+  color: var(--theme-blue);
+}
+
 .nav-item .nav-link.active::after {
   content: '';
   width: 30px;
@@ -159,5 +170,12 @@ footer a {
   vertical-align: baseline;
   width: 100px;
   height: 4px;
+}
+
+.line-pink {
   background: var(--theme-pink);
+}
+
+.line-blue {
+  background: var(--theme-blue);
 }

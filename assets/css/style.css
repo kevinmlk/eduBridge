@@ -145,11 +145,11 @@ footer a {
   background-color: var(--theme-blue);
 }
 
-.btn.btn-primary {
+.btn {
+  font-family: 'Montserrat Medium', sans-serif;
+  width: fit-content;
   padding: 10px 24px 10px 16px;
   border-radius: 36px;
-  font-weight: 500;
-  background-color: var(--theme-green);
   border: none;
   color: var(--theme-black-1);
 }

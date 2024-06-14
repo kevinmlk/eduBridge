@@ -41,7 +41,7 @@
               <li class="nav-item"><a href="./faq.php" class="nav-link">FAQ</a></li>
               <li class="nav-item"><a href="./contact.php" class="nav-link">Contact</a></li>
               <li class="nav-item"><a href="./contact.php" class="nav-link">Profiel</a></li>
-              <li class="nav-item ms-3"><a href="./login.php" class="btn btn-primary"><i class="bi bi-person-circle me-2"></i>Aanmelden</a></li>
+              <li class="nav-item ms-3"><a href="./login.php" class="btn theme-green"><i class="bi bi-person-circle me-2"></i>Aanmelden</a></li>
             </ul>
         </div>
       </div>
@@ -82,7 +82,7 @@
      </section>
 
      <!-- Pillars section -->
-      <section class="container mt-5 mb-5">
+      <section class="container d-flex flex-column justify-content-center mt-5 mb-5">
         <div class="text-center">
           <h2>Waarom eduBridge?</h2>
           <span class="tag-line theme-green"></span>
@@ -124,7 +124,23 @@
           </div>
 
          </div>
+
+         <a href="dashboard.php" class="btn theme-green mt-5 d-flex align-self-center">Ga naar dashboard</a>
       </section>
+
+      <!-- Simulation section -->
+     <section class="container d-flex justify-content-between align-items-center mt-5 mb-5">
+      <div class="d-flex flex-column gap-4">
+        <div>
+          <h2>Simulaties en Procedures</h2>
+          <span class="tag-line theme-blue"></span>
+        </div>
+        <p>Via ons platform kunt u op een eenvoudige manier simulaties uitvoeren uit om te zien welke financiële hulp je kunt krijgen en volg je aanvraagprocedures.</p>
+        <p>Ontdek nu meteen zonder te registreren of dat u voor iets in aanmerkingen zou kunnen komen door snel eens langs door onze simulator!</p>
+        <a href="dashboard.php" class="btn theme-blue">Ga naar dashboard</a>
+      </div>
+      <img src="./assets/images/home-simulation-image.jpg" alt="" class="w-50 rounded">
+     </section>
   </main>
 
   <!-- Start footer -->

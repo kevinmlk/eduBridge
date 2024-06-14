@@ -49,14 +49,14 @@
   </header>
 
   <!-- Start main -->
-  <main class="mb-5">
+  <main class="d-flex flex-column gap-5 mb-5">
     <!-- Hero section -->
-    <section id="home-hero" class="position-relative">
+    <section id="home-hero" class="position-relative mb-5">
       <div class="bg-overlay"></div>
       <div class="container d-flex flex-column gap-4 position-absolute top-50 start-50 translate-middle">
       <div>
         <h1>Ontgrendel uw<br> educatieve reis</h1>
-        <span class="tag-line line-pink"></span>
+        <span class="tag-line theme-pink"></span>
       </div>
       <p>
       Bij eduBridge geloven we dat onderwijs voor iedereen toegankelijk moet zijn.
@@ -69,17 +69,62 @@
     </section>
 
     <!-- Intro section -->
-     <section class="container d-flex justify-content-between align-items-center mt-5">
+     <section class="container d-flex justify-content-between align-items-center mt-5 mb-5">
       <img src="./assets/images/home-intro-image.jpg" alt="" class="w-50 rounded">
       <div class="d-flex flex-column gap-4">
         <div>
           <h2>Wat is eduBridge?</h2>
-          <span class="tag-line line-blue"></span>
+          <span class="tag-line theme-blue"></span>
         </div>
         <p>EduBridge is een innovatief platform dat alle beschikbare educatieve  hulpmiddelen en ondersteuning op één plek samenbrengt. Ons doel is om  het proces van het vinden en aanvragen van educatieve ondersteuning  eenvoudig en transparant te maken. </p>
         <p>Of je nu op zoek bent naar financiële  hulp, informatie over cursussen, of begeleiding bij je leertraject,  EduBridge biedt een gepersonaliseerde ervaring die speciaal is afgestemd  op jouw behoeften.</p>
       </div>
      </section>
+
+     <!-- Pillars section -->
+      <section class="container mt-5 mb-5">
+        <div class="text-center">
+          <h2>Waarom eduBridge?</h2>
+          <span class="tag-line theme-green"></span>
+        </div>
+
+        <!-- Pillars -->
+         <div id="pillars-container" class="d-flex justify-content-between mt-5">
+          <!-- Pillar 1 -->
+          <div id="pillar-one" class="pillar position-relative rounded">
+            <div class="bg-overlay rounded"></div>
+            <div class="d-flex flex-column gap-3 position-absolute top-50 start-50 translate-middle w-75 mt-5 pt-5 text-center">
+              <h3 class="theme-purple">Toegankelijk</h3>
+              <p class="theme-purple">
+                We willen educatie zo toegankelijk mogelijken maken voor iedereen.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div id="pillar-two" class="pillar position-relative rounded">
+            <div class="bg-overlay rounded"></div>
+            <div class="d-flex flex-column gap-3 position-absolute top-50 start-50 translate-middle w-75 mt-5 pt-5 text-center">
+              <h3 class="theme-pink">Gepersonaliseerd</h3>
+              <p class="theme-pink">
+                Iedereen heeft zijn eigen gepersonaliseerde traject.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div id="pillar-three" class="pillar position-relative rounded">
+            <div class="bg-overlay rounded"></div>
+            <div class="d-flex flex-column gap-3 position-absolute top-50 start-50 translate-middle w-75 mt-5 pt-5 text-center">
+              <h3 class="theme-blue">Transparant</h3>
+              <p class="theme-blue">
+              Wij willen zo transparant mogelijk met onze gebruikers communiceren.
+              </p>
+            </div>
+          </div>
+
+         </div>
+      </section>
   </main>
 
   <!-- Start footer -->

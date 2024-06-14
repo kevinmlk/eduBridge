@@ -13,6 +13,11 @@
   --theme-gray-4: #D5D4D4;
 }
 
+::selection {
+  color: var(--theme-black-1);
+  background-color: var(--theme-pink);
+}
+
 /* FONTS */
 @font-face {
   font-family: 'Montserrat Regular';
@@ -76,7 +81,7 @@ footer a {
 }
 
 /* ID'S & CLASSES */
-#language-switcher li a {
+.language-switcher li a {
   text-decoration: none;
   color: var(--theme-black-1);
   padding: 4px;
@@ -148,10 +153,14 @@ footer a {
 .btn {
   font-family: 'Montserrat Medium', sans-serif;
   width: fit-content;
-  padding: 10px 24px 10px 16px;
+  padding: 10px 24px;
   border-radius: 36px;
   border: none;
   color: var(--theme-black-1);
+}
+
+.btn:hover {
+  background-color: var(--theme-gray-2);
 }
 
 .bg-overlay {
@@ -206,6 +215,7 @@ footer a {
   vertical-align: baseline;
   width: 100px;
   height: 4px;
+  border-radius: 12px;
 }
 
 .theme-pink {

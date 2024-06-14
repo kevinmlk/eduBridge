@@ -21,7 +21,7 @@
       <div class="container">
         <!-- Language switcher container -->
         <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
-          <ul id="language-switcher" class="d-flex gap-2 p-0 mb-0">
+          <ul class="language-switcher d-flex gap-2 p-0 mb-0">
             <li><a href="#">EN</a></li>
             <li><a href="#">FR</a></li>
             <li><a href="#" class="active-lang">NL</a></li>
@@ -40,7 +40,6 @@
               <li class="nav-item"><a href="./news.php" class="nav-link">Nieuws</a></li>
               <li class="nav-item"><a href="./faq.php" class="nav-link">FAQ</a></li>
               <li class="nav-item"><a href="./contact.php" class="nav-link">Contact</a></li>
-              <li class="nav-item"><a href="./contact.php" class="nav-link">Profiel</a></li>
               <li class="nav-item ms-3"><a href="./login.php" class="btn theme-green"><i class="bi bi-person-circle me-2"></i>Aanmelden</a></li>
             </ul>
         </div>
@@ -49,7 +48,7 @@
   </header>
 
   <!-- Start main -->
-  <main class="d-flex flex-column gap-5 mb-5">
+  <main class="d-flex flex-column gap-5 mb-5 pb-5">
     <!-- Hero section -->
     <section id="home-hero" class="position-relative mb-5">
       <div class="bg-overlay"></div>
@@ -137,7 +136,7 @@
         </div>
         <p>Via ons platform kunt u op een eenvoudige manier simulaties uitvoeren uit om te zien welke financiële hulp je kunt krijgen en volg je aanvraagprocedures.</p>
         <p>Ontdek nu meteen zonder te registreren of dat u voor iets in aanmerkingen zou kunnen komen door snel eens langs door onze simulator!</p>
-        <a href="dashboard.php" class="btn theme-blue">Ga naar dashboard</a>
+        <a href="simulator.php" class="btn theme-blue">Ontdek simulatie</a>
       </div>
       <img src="./assets/images/home-simulation-image.jpg" alt="" class="w-50 rounded">
      </section>

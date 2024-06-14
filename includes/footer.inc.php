@@ -31,7 +31,7 @@
         <li><a href="#">Privacyverklaring</a></li>
       </ul>
 
-      <ul id="language-switcher" class="d-flex gap-2">
+      <ul class="language-switcher d-flex gap-2">
         <li><a href="#">EN</a></li>
         <li><a href="#">FR</a></li>
         <li><a href="#" class="active-lang">NL</a></li>

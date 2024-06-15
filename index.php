@@ -146,6 +146,6 @@
   <?php include_once(__DIR__ . '/includes/footer.inc.php'); ?>
 
   <!-- Links JS scripts -->
-  <script scr="./assets/js/app.js"></script>
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>

@@ -218,6 +218,24 @@ footer a {
   border-radius: 12px;
 }
 
+.simulation-option {
+  width: fit-content;
+}
+
+.simulation-option i {
+  font-size: 72px;
+  padding: 24px 40px;
+  border: 2px solid var(--theme-black-2);
+  color: var(--theme-black-2);
+  border-radius: 500px;
+}
+
+.simulation-option span {
+  font-size: 1em;
+  max-width: 150px;
+  text-align: center;
+}
+
 .theme-pink {
   background: var(--theme-pink);
 }

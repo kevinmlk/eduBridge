@@ -51,7 +51,7 @@
   <main class="d-flex flex-column gap-5 mb-5 pb-5">
 
     <!-- Intro section -->
-     <section class="container d-flex flex-column justify-content-center align-items-center gap-4 mt-5 mb-5 text-center">
+     <section id="intro-section" class="container d-flex flex-column justify-content-center align-items-center gap-4 mt-5 mb-5 text-center">
         <div>
           <h2>Wat is eduBridge?</h2>
           <span class="tag-line theme-purple"></span>
@@ -65,9 +65,39 @@
         <div class="d-flex flex-column align-items-center gap-3 mt-5">
           <h3>Disclaimer</h3>
           <p>De simulatie heeft geen juridische bewijskracht. Onjuist gebruik van de toepassing, wijzigende parameters of de invoer van verkeerde gegevens kunnen zorgen voor een resultaat dat verschilt van de echte aanvraag.</p>
-          <a href="./contact.php" class="btn theme-blue mt-4">Start simulatie</a>
+          <a href="#" id="start-button" class="btn theme-blue mt-4">Start simulatie</a>
         </div>
      </section>
+
+     <!-- Simulation section -->
+      <section id="simulation-section" class="container d-flex flex-column justify-content-center align-items-center gap-4 mt-5 mb-5 d-none">
+        <div class="text-center">
+          <h2>simulatie tegemoetkoming</h2>
+          <span class="tag-line theme-purple"></span>
+        </div>
+        <!-- Situation container -->
+        <div id="situation-container" class="d-flex flex-column gap-3">
+          <p class="text-center">Selecteer een antwoord die het best bij jouw huidige situatie past.</p>
+          <!-- Options container -->
+          <div id="options-container" class="d-flex justify-content-between">
+            <!-- First option -->
+            <div class="simulation-option d-flex flex-column justify-content-center align-items-center gap-4">
+                <i class="bi bi-people-fill"></i>
+              <span>Verder gaan als ouder</span>
+            </div>
+            <!-- Second option -->
+            <div class="simulation-option d-flex flex-column justify-content-center align-items-center gap-4">
+                <i class="bi bi-person-walking"></i>
+              <span>Verder gaan als volwassen (18+)</span>
+            </div>
+            <!-- Third option -->
+            <div class="simulation-option d-flex flex-column justify-content-center align-items-center gap-4">
+                <i class="bi bi-person-arms-up"></i>
+              <span>Verder gaan als volwassen (18-)</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
   </main>
 
@@ -75,6 +105,6 @@
   <?php include_once(__DIR__ . '/includes/footer.inc.php'); ?>
 
   <!-- Links JS scripts -->
-  <script scr="./assets/js/simulator.js"></script>
+  <script src="./assets/js/simulator.js"></script>
 </body>
 </html>

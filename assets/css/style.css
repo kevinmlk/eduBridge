@@ -159,6 +159,11 @@ footer a {
   color: var(--theme-black-1);
 }
 
+.btn.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--theme-black-1);
+}
+
 .btn:hover {
   background-color: var(--theme-gray-2);
 }
@@ -222,12 +227,21 @@ footer a {
   width: fit-content;
 }
 
+.simulation-option:hover {
+  cursor: pointer;
+}
+
 .simulation-option i {
   font-size: 72px;
   padding: 24px 40px;
   border: 2px solid var(--theme-black-2);
   color: var(--theme-black-2);
   border-radius: 500px;
+  transition: .3s ease;
+}
+
+.simulation-option:hover i {
+  background-color: var(--theme-green);
 }
 
 .simulation-option span {

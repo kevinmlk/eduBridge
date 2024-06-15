@@ -70,7 +70,7 @@
      </section>
 
      <!-- Simulation section -->
-      <section id="simulation-section" class="container d-flex flex-column justify-content-center align-items-center gap-4 mt-5 mb-5 d-none">
+      <section id="simulation-section" class="container d-flex flex-column justify-content-center align-items-center gap-5 mt-5 mb-5 d-none">
         <div class="text-center">
           <h2>simulatie tegemoetkoming</h2>
           <span class="tag-line theme-purple"></span>
@@ -79,24 +79,26 @@
         <div id="situation-container" class="d-flex flex-column gap-3">
           <p class="text-center">Selecteer een antwoord die het best bij jouw huidige situatie past.</p>
           <!-- Options container -->
-          <div id="options-container" class="d-flex justify-content-between">
+          <div id="options-container" class="d-flex justify-content-between mt-4">
             <!-- First option -->
-            <div class="simulation-option d-flex flex-column justify-content-center align-items-center gap-4">
+            <div id="option-parent" class="simulation-option d-flex flex-column justify-content-center align-items-center gap-4">
                 <i class="bi bi-people-fill"></i>
               <span>Verder gaan als ouder</span>
             </div>
             <!-- Second option -->
-            <div class="simulation-option d-flex flex-column justify-content-center align-items-center gap-4">
+            <div id="option-adult" class="simulation-option d-flex flex-column justify-content-center align-items-center gap-4">
                 <i class="bi bi-person-walking"></i>
               <span>Verder gaan als volwassen (18+)</span>
             </div>
             <!-- Third option -->
-            <div class="simulation-option d-flex flex-column justify-content-center align-items-center gap-4">
+            <div id="option-minor" class="simulation-option d-flex flex-column justify-content-center align-items-center gap-4">
                 <i class="bi bi-person-arms-up"></i>
-              <span>Verder gaan als volwassen (18-)</span>
+              <span>Verder gaan als minderjarige (18-)</span>
             </div>
           </div>
         </div>
+
+        <a href="#" id="cancel-button" class="btn btn-secondary mt-4">Annuleer simulatie</a>
       </section>
 
   </main>

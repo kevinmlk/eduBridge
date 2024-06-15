@@ -70,9 +70,9 @@
      </section>
 
      <!-- Simulation section -->
-      <section id="simulation-section" class="container d-flex flex-column justify-content-center align-items-center gap-5 mt-5 mb-5 d-none">
+      <section id="simulation-section" class="container d-flex flex-column justify-content-center align-items-center gap-4 mt-5 mb-5 d-none">
         <div class="text-center">
-          <h2>simulatie tegemoetkoming</h2>
+          <h2>Simulatie tegemoetkoming</h2>
           <span class="tag-line theme-purple"></span>
         </div>
         <!-- Situation container -->
@@ -98,7 +98,50 @@
           </div>
         </div>
 
-        <a href="#" id="cancel-button" class="btn btn-secondary mt-4">Annuleer simulatie</a>
+        <div id="education-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
+          <p class="text-center">Selecteer welke soort educatie je wilt gaan volgen.</p>
+          <div id="education-options" class="d-flex flex-column justify-content-center gap-3">
+            <!-- First option -->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Universitaire opleiding
+              </label>
+            </div>
+            <!-- First option -->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Hogeschoolopleiding
+              </label>
+            </div>
+            <!-- First option -->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Beroepsopleiding
+              </label>
+            </div>
+            <!-- First option -->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Duaal leren
+              </label>
+            </div>
+            <!-- First option -->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Volwassenonderwijs
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <a href="#" id="return-button" class="d-none"><i class="bi bi-arrow-return-left"></i>Terug naar vorige vraag</a>
+        <a href="simulator.php" id="cancel-button" class="btn btn-secondary mt-4">Annuleer simulatie</a>
       </section>
 
   </main>

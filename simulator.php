@@ -100,45 +100,81 @@
 
         <div id="education-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
           <p class="text-center">Selecteer welke soort educatie je wilt gaan volgen.</p>
-          <div id="education-options" class="d-flex flex-column justify-content-center gap-3">
+          <div id="education-options" class="d-flex flex-column justify-content-center gap-4">
             <!-- First option -->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="education-option" id="option-university">
+              <label class="form-check-label" for="universiteit-option">
                 Universitaire opleiding
               </label>
             </div>
             <!-- First option -->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="education-option" id="option-college">
+              <label class="form-check-label" for="hogeschool-option">
                 Hogeschoolopleiding
               </label>
             </div>
             <!-- First option -->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="education-option" id="beroeps-option">
+              <label class="form-check-label" for="beroeps-option">
                 Beroepsopleiding
               </label>
             </div>
             <!-- First option -->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="education-option" id="duaal-option">
+              <label class="form-check-label" for="duaal-option">
                 Duaal leren
               </label>
             </div>
             <!-- First option -->
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="education-option" id="volwassen-option">
+              <label class="form-check-label" for="volwassen-option">
                 Volwassenonderwijs
               </label>
             </div>
 
           </div>
         </div>
+
+        <!-- Education past container -->
+         <div id="education-past-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
+
+          <p class="text-center">Heb je al een opleiding gevolgd in het hoger onderwijs?</p>
+          <!-- Options container -->
+          <div id="options-container" class="d-flex justify-content-center gap-5 mt-4">
+            <!-- First option -->
+            <div id="edupast-option-yes" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
+                <span>Ja</span>
+            </div>
+            <!-- Second option -->
+            <div id="edupast-option-no" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
+                <span>Nee</span>
+            </div>
+          </div>
+
+         </div>
+         
+         <!-- Education past container -->
+         <div id="behalf-of-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
+
+          <p class="text-center">Ben je nog ten laste van jouw ouders?</p>
+          <!-- Options container -->
+          <div id="options-container" class="d-flex justify-content-center gap-5 mt-4">
+            <!-- First option -->
+            <div id="behalf-of-option-yes" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
+                <span>Ja</span>
+            </div>
+            <!-- Second option -->
+            <div id="behalf-of-option-no" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
+                <span>Nee</span>
+            </div>
+          </div>
+
+         </div>
 
         <a href="#" id="return-button" class="d-none"><i class="bi bi-arrow-return-left"></i>Terug naar vorige vraag</a>
         <a href="simulator.php" id="cancel-button" class="btn btn-secondary mt-4">Annuleer simulatie</a>

@@ -5,6 +5,8 @@ const introSection = document.querySelector('#intro-section');
 const simulationSection = document.querySelector('#simulation-section');
 const situationContainer = document.querySelector('#situation-container');
 const educationContainer = document.querySelector('#education-container');
+const eduPastContainer = document.querySelector('#education-past-container');
+const behalfOfContainer = document.querySelector('#behalf-of-container');
 
 // Button containers
 const startBtn = document.querySelector('#start-button');
@@ -12,6 +14,15 @@ const startBtn = document.querySelector('#start-button');
 const optionParent = document.querySelector('#option-parent');
 const optionAdult = document.querySelector('#option-adult');
 const optionMinor = document.querySelector('#option-minor');
+// Education options
+const optionUniversity = document.querySelector('#option-university');
+const optionCollege = document.querySelector('#option-college');
+// Edu past options
+const optionEduPastYes = document.querySelector('#edupast-option-yes');
+const optionEduPastNo = document.querySelector('#edupast-option-no');
+// Behalf of options
+const optionBehalfOfYes = document.querySelector('#behalf-of-option-yes');
+const optionBehalfOfNo = document.querySelector('#behalf-of-option-no');
 
 const setup = () => {
   console.log('Content is loaded');
@@ -20,7 +31,46 @@ const setup = () => {
   startBtn.addEventListener('click', showSimulation);
   // Event listeners - situation options
   optionMinor.addEventListener('click', showMinorRoute);
+  // Event listeners - education options
+  optionUniversity.addEventListener('click', showHighEduRoute);
+  optionCollege.addEventListener('click', showHighEduRoute);
+  // Event listeners - edu past options
+  optionEduPastYes.addEventListener('click', showStudyPointsRoute);
+  optionEduPastNo.addEventListener('click', showBehalfOfRoute);
 };
+
+// Function that displays the study points route
+const showStudyPointsRoute = () => {
+  if (!eduPastContainer.classList.contains('d-none')) {
+    eduPastContainer.classList.add('d-none');
+    
+    if (behalfOfContainer.classList.contains('d-none')) {
+      behalfOfContainer.classList.remove('d-none');
+    }
+  }
+}
+
+// Function that displays the study points route
+const showBehalfOfRoute = () => {
+  if (!eduPastContainer.classList.contains('d-none')) {
+    eduPastContainer.classList.add('d-none');
+    
+    if (behalfOfContainer.classList.contains('d-none')) {
+      behalfOfContainer.classList.remove('d-none');
+    }
+  }
+}
+
+// Function that displays the high education route
+const showHighEduRoute = () => {
+  if (!educationContainer.classList.contains('d-none')) {
+    educationContainer.classList.add('d-none');
+    
+    if (eduPastContainer.classList.contains('d-none')) {
+      eduPastContainer.classList.remove('d-none');
+    }
+  }
+}
 
 // Function that displays the minor route
 const showMinorRoute = () => {

@@ -227,7 +227,18 @@ footer a {
   width: fit-content;
 }
 
-.simulation-option:hover {
+.simulation-option-alt {
+  font-size: 40px;
+  font-family: 'Montserrat Medium', sans-serif;
+  width: 140px;
+  height: 140px;
+  border: 2px solid var(--theme-black-2);
+  color: var(--theme-black-2);
+  border-radius: 500px;
+  transition: .3s ease;
+}
+
+.simulation-option:hover, .simulation-option-alt:hover {
   cursor: pointer;
 }
 
@@ -240,7 +251,7 @@ footer a {
   transition: .3s ease;
 }
 
-.simulation-option:hover i {
+.simulation-option:hover i, .simulation-option-alt:hover {
   background-color: var(--theme-green);
 }
 

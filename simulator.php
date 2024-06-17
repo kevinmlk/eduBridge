@@ -158,7 +158,7 @@
 
          </div>
          
-         <!-- Education past container -->
+         <!-- Behalf of container -->
          <div id="behalf-of-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
 
           <p class="text-center">Ben je nog ten laste van jouw ouders?</p>
@@ -170,6 +170,24 @@
             </div>
             <!-- Second option -->
             <div id="behalf-of-option-no" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
+                <span>Nee</span>
+            </div>
+          </div>
+
+         </div>
+
+         <!-- Schooltoeslag container -->
+         <div id="schooltoeslag-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
+
+          <p class="text-center">Had(den) je ouder(s) recht op een Schooltoeslag tijdens het basis- en secundair onderwijs?</p>
+          <!-- Options container -->
+          <div id="options-container" class="d-flex justify-content-center gap-5 mt-4">
+            <!-- First option -->
+            <div id="shooltoestlag-option-yes" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
+                <span>Ja</span>
+            </div>
+            <!-- Second option -->
+            <div id="schooltoeslag-option-no" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
                 <span>Nee</span>
             </div>
           </div>

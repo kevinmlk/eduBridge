@@ -8,9 +8,14 @@ const educationContainer = document.querySelector('#education-container');
 const eduPastContainer = document.querySelector('#education-past-container');
 const behalfOfContainer = document.querySelector('#behalf-of-container');
 const schooltoeslagContainer = document.querySelector('#schooltoeslag-container');
+const incomeContainer = document.querySelector('#income-container');
+const positiveContainer = document.querySelector('#positive-container');
+const negativeContainer = document.querySelector('#negative-container');
 
 // Button containers
 const startBtn = document.querySelector('#start-button');
+// Begin procedure button
+const procedureBtn = document.querySelector('#begin-procedure');
 // Situation options
 const optionParent = document.querySelector('#option-parent');
 const optionAdult = document.querySelector('#option-adult');
@@ -54,9 +59,31 @@ const setup = () => {
 const showPositiveResult = () => {
   if (!schooltoeslagContainer.classList.contains('d-none')) {
     schooltoeslagContainer.classList.add('d-none');
-    
-    if (postiveContainer.classList.contains('d-none')) {
+    procedureBtn.classList.remove('d-none');
+    if (positiveContainer.classList.contains('d-none')) {
       positiveContainer.classList.remove('d-none');
+    }
+  }
+}
+
+// Function that displays the negative results of the simulation
+const showNegativeResult = () => {
+  if (!schooltoeslagContainer.classList.contains('d-none')) {
+    schooltoeslagContainer.classList.add('d-none');
+    
+    if (negativeContainer.classList.contains('d-none')) {
+      negativeContainer.classList.remove('d-none');
+    }
+  }
+}
+
+// Function that displays the income route
+const showIncomeRoute = () => {
+  if (!behalfOfContainer.classList.contains('d-none')) {
+    behalfOfContainer.classList.add('d-none');
+    
+    if (incomeContainer.classList.contains('d-none')) {
+      incomeContainer.classList.remove('d-none');
     }
   }
 }

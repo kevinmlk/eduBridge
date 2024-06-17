@@ -242,7 +242,7 @@ footer a {
   cursor: pointer;
 }
 
-.simulation-option i {
+.simulation-option i, #positive-check i {
   font-size: 72px;
   padding: 24px 40px;
   border: 2px solid var(--theme-black-2);

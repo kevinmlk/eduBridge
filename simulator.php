@@ -158,6 +158,24 @@
 
          </div>
          
+        <!-- Studypoints container -->
+         <div id="studypoints-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
+
+          <p class="text-center">Heb je meer dan 60 studiepunten over?</p>
+          <!-- Options container -->
+          <div id="options-container" class="d-flex justify-content-center gap-5 mt-4">
+            <!-- First option -->
+            <div id="studypoints-option-yes" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
+                <span>Ja</span>
+            </div>
+            <!-- Second option -->
+            <div id="studypoints-option-no" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
+                <span>Nee</span>
+            </div>
+          </div>
+
+         </div>
+         
          <!-- Behalf of container -->
          <div id="behalf-of-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
 
@@ -194,26 +212,51 @@
 
          </div>
 
-         <!-- Positive results container -->
-         <div id="positive-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
-
-          <p class="text-center">Je zou in aanmerking kunnen komen voor een studietoelagen om jouw opleiding te financieren.</p>
-          <!-- Options container -->
-          <div id="options-container" class="d-flex justify-content-center gap-5 mt-4">
-            <!-- First option -->
-            <div id="positive-check" class="d-flex flex-column justify-content-center align-items-center gap-4">
-              <i class="bi bi-check-lg theme-green"></i>
-            </div>
-          </div>
-          <p class="text-center">Dit resultaat is louter informatief en heeft geen juridische  bewijskracht. Ingave van verkeerde of onvolledige gegevens kunnen ertoe  leiden dat de uitkomst verschilt van het resultaat van uw aanvraag.</p>
-         </div>
-
         <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
           <a href="#" id="return-button" class="d-none"><i class="bi bi-arrow-return-left"></i>Terug naar vorige vraag</a>
           <a href="dashboard.php" id="begin-procedure" class="d-none btn theme-blue">Begin procedure</a>
           <a href="simulator.php" id="cancel-button" class="btn btn-secondary">Annuleer simulatie</a>
         </div>
 
+      </section>
+
+      <section id="results-section" class="d-none container d-flex flex-column justify-content-center align-items-center gap-4 mt-5 mb-5 d-none">
+        <div class="text-center">
+          <h2>Simulatie tegemoetkoming</h2>
+          <span class="tag-line theme-purple"></span>
+        </div>
+        <!-- Positive results container -->
+        <div id="positive-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
+
+        <p class="text-center">Je zou in aanmerking kunnen komen voor een studietoelagen om jouw opleiding te financieren.</p>
+        <!-- Options container -->
+        <div id="options-container" class="d-flex justify-content-center gap-5 mt-4">
+          <!-- First option -->
+          <div id="positive-check" class="d-flex flex-column justify-content-center align-items-center gap-4">
+            <i class="bi bi-check-lg theme-green"></i>
+          </div>
+        </div>
+        <p class="text-center">Dit resultaat is louter informatief en heeft geen juridische  bewijskracht. Ingave van verkeerde of onvolledige gegevens kunnen ertoe  leiden dat de uitkomst verschilt van het resultaat van uw aanvraag.</p>
+        </div>
+
+        <!-- Negative results container -->
+        <div id="negative-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
+
+        <p class="text-center">Volgens onze simulatie, zal je niet in aanmerking komen voor financiële tegemoetkoming om uw opleiding te financieren.</p>
+        <!-- Options container -->
+        <div id="options-container" class="d-flex justify-content-center gap-5 mt-4">
+          <!-- First option -->
+          <div id="positive-check" class="d-flex flex-column justify-content-center align-items-center gap-4">
+          <i class="bi bi-ban theme-pink"></i>
+          </div>
+        </div>
+        <p class="text-center">Dit resultaat is louter informatief en heeft geen juridische  bewijskracht. Ingave van verkeerde of onvolledige gegevens kunnen ertoe  leiden dat de uitkomst verschilt van het resultaat van uw aanvraag.</p>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
+          <a href="dashboard.php" id="begin-procedure" class="btn theme-blue">Begin procedure</a>
+          <a href="simulator.php" id="cancel-button" class="btn btn-secondary">Nieuwe simulatie</a>
+        </div>
       </section>
 
   </main>

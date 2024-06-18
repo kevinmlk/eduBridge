@@ -3,9 +3,11 @@
 // Sections & div's containers
 const introSection = document.querySelector('#intro-section');
 const simulationSection = document.querySelector('#simulation-section');
+const resultsSection = document.querySelector('#results-section');
 const situationContainer = document.querySelector('#situation-container');
 const educationContainer = document.querySelector('#education-container');
 const eduPastContainer = document.querySelector('#education-past-container');
+const studypointsContainer = document.querySelector('#studypoints-container');
 const behalfOfContainer = document.querySelector('#behalf-of-container');
 const schooltoeslagContainer = document.querySelector('#schooltoeslag-container');
 const incomeContainer = document.querySelector('#income-container');
@@ -16,6 +18,8 @@ const negativeContainer = document.querySelector('#negative-container');
 const startBtn = document.querySelector('#start-button');
 // Begin procedure button
 const procedureBtn = document.querySelector('#begin-procedure');
+// Cancel simulation
+const cancelBtn = document.querySelector('#cancel-button');
 // Situation options
 const optionParent = document.querySelector('#option-parent');
 const optionAdult = document.querySelector('#option-adult');
@@ -23,6 +27,9 @@ const optionMinor = document.querySelector('#option-minor');
 // Education options
 const optionUniversity = document.querySelector('#option-university');
 const optionCollege = document.querySelector('#option-college');
+// Studypoints options
+const optionStudypointsYes = document.querySelector('#studypoints-option-yes');
+const optionStudypointsNo = document.querySelector('#studypoints-option-no');
 // Edu past options
 const optionEduPastYes = document.querySelector('#edupast-option-yes');
 const optionEduPastNo = document.querySelector('#edupast-option-no');
@@ -40,12 +47,16 @@ const setup = () => {
   startBtn.addEventListener('click', showSimulation);
   // Event listeners - situation options
   optionMinor.addEventListener('click', showMinorRoute);
+  optionAdult.addEventListener('click', showMinorRoute);
   // Event listeners - education options
   optionUniversity.addEventListener('click', showHighEduRoute);
   optionCollege.addEventListener('click', showHighEduRoute);
   // Event listeners - edu past options
   optionEduPastYes.addEventListener('click', showStudyPointsRoute);
   optionEduPastNo.addEventListener('click', showBehalfOfRoute);
+  // Event listeners - studypoints options
+  optionStudypointsYes.addEventListener('click', showPositiveResult);
+  optionStudypointsNo.addEventListener('click', showNegativeResult);
   // Event listeners - behalf of options
   optionBehalfOfYes.addEventListener('click', showSchooltoeslagRoute);
   optionBehalfOfNo.addEventListener('click', showIncomeRoute);
@@ -57,10 +68,11 @@ const setup = () => {
 
 // Function that displays the positive results of the simulation
 const showPositiveResult = () => {
-  if (!schooltoeslagContainer.classList.contains('d-none')) {
-    schooltoeslagContainer.classList.add('d-none');
-    procedureBtn.classList.remove('d-none');
-    if (positiveContainer.classList.contains('d-none')) {
+  if (!simulationSection.classList.contains('d-none')) {
+    simulationSection.classList.add('d-none');
+
+    if (resultsSection.classList.contains('d-none')) {
+      resultsSection.classList.remove('d-none');
       positiveContainer.classList.remove('d-none');
     }
   }
@@ -68,10 +80,11 @@ const showPositiveResult = () => {
 
 // Function that displays the negative results of the simulation
 const showNegativeResult = () => {
-  if (!schooltoeslagContainer.classList.contains('d-none')) {
-    schooltoeslagContainer.classList.add('d-none');
+  if (!simulationSection.classList.contains('d-none')) {
+    simulationSection.classList.add('d-none');
     
-    if (negativeContainer.classList.contains('d-none')) {
+    if (resultsSection.classList.contains('d-none')) {
+      resultsSection.classList.remove('d-none');
       negativeContainer.classList.remove('d-none');
     }
   }
@@ -104,8 +117,8 @@ const showStudyPointsRoute = () => {
   if (!eduPastContainer.classList.contains('d-none')) {
     eduPastContainer.classList.add('d-none');
     
-    if (behalfOfContainer.classList.contains('d-none')) {
-      behalfOfContainer.classList.remove('d-none');
+    if (studypointsContainer.classList.contains('d-none')) {
+      studypointsContainer.classList.remove('d-none');
     }
   }
 }

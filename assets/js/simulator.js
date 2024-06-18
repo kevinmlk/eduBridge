@@ -39,6 +39,9 @@ const optionBehalfOfNo = document.querySelector('#behalf-of-option-no');
 // Schooltoeslag options
 const optionSchooltoeslagYes = document.querySelector('#schooltoeslag-option-yes');
 const optionSchooltoeslagNo = document.querySelector('#schooltoeslag-option-no');
+// Income options
+const optionIncomeYes = document.querySelector('#income-option-yes');
+const optionIncomeNo = document.querySelector('#income-option-no');
 
 const setup = () => {
   console.log('Content is loaded');
@@ -63,6 +66,9 @@ const setup = () => {
   // Event listeners - schooltoeslag options
   optionSchooltoeslagYes.addEventListener('click', showPositiveResult);
   optionSchooltoeslagNo.addEventListener('click', showNegativeResult);
+  // Event listeners - income options
+  optionIncomeYes.addEventListener('click', showNegativeResult);
+  optionIncomeNo.addEventListener('click', showPositiveResult);
   // Add event listeners - end
 };
 

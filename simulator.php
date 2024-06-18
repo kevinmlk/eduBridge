@@ -36,10 +36,10 @@
         <div class="d-flex w-100 justify-content-between align-items-center">
           <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
             <ul class="nav d-flex gap-2">
-              <li class="nav-item"><a href="./about.php" aria-page="current" class="nav-link active">Over</a></li>
-              <li class="nav-item"><a href="./news.php" class="nav-link">Nieuws</a></li>
-              <li class="nav-item"><a href="./faq.php" class="nav-link">FAQ</a></li>
-              <li class="nav-item"><a href="./contact.php" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Over</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Nieuws</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
               <li class="nav-item ms-3"><a href="./login.php" class="btn theme-green"><i class="bi bi-person-circle me-2"></i>Aanmelden</a></li>
             </ul>
         </div>
@@ -188,6 +188,24 @@
             </div>
             <!-- Second option -->
             <div id="behalf-of-option-no" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
+                <span>Nee</span>
+            </div>
+          </div>
+
+         </div>
+
+         <!-- Income container -->
+         <div id="income-container" class="d-none d-flex flex-column justify-content-center align-items-center gap-4">
+
+          <p class="text-center">Zijn je inkomsten hoger dan € 22.011,47?</p>
+          <!-- Options container -->
+          <div id="options-container" class="d-flex justify-content-center gap-5 mt-4">
+            <!-- First option -->
+            <div id="income-option-yes" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
+                <span>Ja</span>
+            </div>
+            <!-- Second option -->
+            <div id="income-option-no" class="simulation-option-alt d-flex flex-column justify-content-center align-items-center gap-4">
                 <span>Nee</span>
             </div>
           </div>

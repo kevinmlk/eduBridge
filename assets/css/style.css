@@ -2,8 +2,10 @@
   --theme-off-white: #F9FAFD;
   --theme-white: #FFFFFF;
   --theme-purple: #B3ADF7;
+  --theme-purple-light: rgba(179, 173, 247, .4);
   --theme-pink: #EE707B;
   --theme-green: #90D0BA;
+  --theme-green-light: rgba(144, 208, 186, .4);
   --theme-blue: #7FCFE4;
   --theme-black-1: #1C1A23;
   --theme-black-2: #2D2926;
@@ -63,6 +65,12 @@ h3 {
   font-size: 1.8em;
 }
 
+h5 {
+  font-family: 'Montserrat Medium', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
 p {
   font-size: 1.2em;
   max-width: 600px;
@@ -92,6 +100,17 @@ footer a {
   color: var(--theme-white) !important;
 }
 
+.nav-link.active::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 500px;
+  background-color: var(--theme-blue);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #notification-container a {
   text-decoration: none;
   color: var(--theme-black-1);
@@ -108,10 +127,7 @@ footer a {
 }
 
 #roadmap-container {
-  background-image: url('../images/svg/roadmap.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
+  /* height: 500px; */
 }
 
 #footer-links {
@@ -141,13 +157,6 @@ footer a {
 
 .nav-link:hover {
   color: var(--theme-blue);
-}
-
-.nav-item .nav-link.active::after {
-  content: '';
-  width: 30px;
-  height: 30px;
-  background-color: var(--theme-blue);
 }
 
 .btn {
@@ -284,6 +293,68 @@ footer a {
   color: var(--theme-white);
 }
 
+.login-card {
+  border: 2px solid var(--theme-gray-4);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.login-card a {
+  text-decoration: none;
+  color: var(--theme-black-2);
+}
+
+.login-card i {
+  color: var(--theme-blue);
+  padding: 4px 8px;
+  border: 1px solid var(--theme-blue);
+  border-radius: 500px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.login-card img {
+  height: 48px;
+}
+
+.login-badge {
+  width: fit-content;
+  font-size: .9em;
+  font-family: 'Montserrat Medium', sans-serif;
+}
+
+.btn.btn-link {
+  text-decoration: none;
+}
+
+.btn.btn-link:hover {
+  color: var(--theme-black-1);
+}
+
+#itsme-button img {
+  height: 24px !important;
+}
+
+.roadmap-button {
+  height: fit-content;
+  width: fit-content;
+  padding: 14px 8px;
+  border-radius: 500px;
+  animation: blinker 2s linear infinite;
+  color: var(--theme-black-1);
+}
+
+.roadmap-button:hover {
+  cursor: pointer;
+}
+
+.roadmap-button i {
+  font-size: 32px;
+  padding: 8px 12px;
+  border-radius: 500px;
+  
+}
+
 .theme-pink {
   background: var(--theme-pink);
 }
@@ -298,4 +369,20 @@ footer a {
 
 .theme-purple {
   background: var(--theme-purple);
+}
+
+.theme-purple-light {
+  background: var(--theme-purple-light);
+  margin-left: 428px;
+}
+
+.theme-green-light {
+  background: var(--theme-green-light);
+  margin-left: 1128px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: .4;
+  }
 }

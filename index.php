@@ -36,7 +36,7 @@
         <div class="d-flex w-100 justify-content-between align-items-center">
           <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
             <ul class="nav d-flex gap-2">
-              <li class="nav-item"><a href="./about.php" aria-page="current" class="nav-link active">Over</a></li>
+              <li class="nav-item"><a href="./about.php" class="nav-link">Over</a></li>
               <li class="nav-item"><a href="./news.php" class="nav-link">Nieuws</a></li>
               <li class="nav-item"><a href="./faq.php" class="nav-link">FAQ</a></li>
               <li class="nav-item"><a href="./contact.php" class="nav-link">Contact</a></li>
@@ -124,7 +124,7 @@
 
          </div>
 
-         <a href="dashboard.php" class="btn theme-green mt-5 d-flex align-self-center">Ga naar dashboard</a>
+         <a href="./login.php" class="btn theme-green mt-5 d-flex align-self-center">Ga naar dashboard</a>
       </section>
 
       <!-- Simulation section -->

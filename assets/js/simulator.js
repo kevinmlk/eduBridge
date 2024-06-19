@@ -17,7 +17,7 @@ const negativeContainer = document.querySelector('#negative-container');
 // Button containers
 const startBtn = document.querySelector('#start-button');
 // Begin procedure button
-const procedureBtn = document.querySelector('#begin-procedure');
+const itsmeBtn = document.querySelector('#itsme-button');
 // Cancel simulation
 const cancelBtn = document.querySelector('#cancel-button');
 // Situation options
@@ -81,6 +81,8 @@ const showPositiveResult = () => {
       resultsSection.classList.remove('d-none');
       positiveContainer.classList.remove('d-none');
     }
+
+    procedureBtn.classList.remove('d-none');
   }
 }
 
@@ -104,6 +106,8 @@ const showIncomeRoute = () => {
     if (incomeContainer.classList.contains('d-none')) {
       incomeContainer.classList.remove('d-none');
     }
+    
+    itsmeBtn.classList.remove('d-none');
   }
 }
 
@@ -126,6 +130,8 @@ const showStudyPointsRoute = () => {
     if (studypointsContainer.classList.contains('d-none')) {
       studypointsContainer.classList.remove('d-none');
     }
+
+    itsmeBtn.classList.remove('d-none');
   }
 }
 

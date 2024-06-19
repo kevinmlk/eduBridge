@@ -3,7 +3,7 @@
   session_start();
 
   if (isset($_SESSION['loggedin'])) {
-    header('Location: roadmap.php');
+    header('Location: ./dashboard/roadmap.php');
     exit;
   }
 ?><!DOCTYPE html>
@@ -75,7 +75,7 @@
             <h5 class="align-self-start justify-self-start">itsme®</h5>
             <img class="justify-self-end" src="./assets/images/icons/itsme-auth.png" alt="Kaartlezer">
           </a>
-          <a href="#" class="btn btn-link d-flex align-self-end mt-5">Meer info</a>
+          <a href="./includes/auth-itsme.inc.php" class="btn btn-link d-flex align-self-end mt-5">Meer info</a>
         </div>
       </div>
      </section>

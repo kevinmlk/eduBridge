@@ -124,7 +124,7 @@
 
          </div>
 
-         <a href="dashboard.php" class="btn theme-green mt-5 d-flex align-self-center">Ga naar dashboard</a>
+         <a href="./login.php" class="btn theme-green mt-5 d-flex align-self-center">Ga naar dashboard</a>
       </section>
 
       <!-- Simulation section -->

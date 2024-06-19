@@ -3,7 +3,7 @@
   session_start();
 
   if (!isset($_SESSION['loggedin'])) {
-    header('Location: login.php');
+    header('Location: ./../login.php');
     exit;
   }
 ?><!DOCTYPE html>
@@ -12,12 +12,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Reset CSS -->
-  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./../assets/css/reset.css">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/bootstrap/icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./../assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./../assets/css/style.css">
   <!-- Tab title -->
   <title>Welkom bij eduBridge | eduBridge Belgium</title>
 </head>
@@ -69,9 +69,9 @@
   </main>
 
   <!-- Start footer -->
-  <?php include_once(__DIR__ . '/includes/footer.inc.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/footer.inc.php'); ?>
 
   <!-- Links JS scripts -->
-  <script scr="./assets/js/app.js"></script>
+  <script scr="./../assets/js/app.js"></script>
 </body>
 </html>

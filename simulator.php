@@ -232,7 +232,7 @@
 
         <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
           <a href="#" id="return-button" class="d-none"><i class="bi bi-arrow-return-left"></i>Terug naar vorige vraag</a>
-          <a href="dashboard.php" id="begin-procedure" class="d-none btn theme-blue">Begin procedure</a>
+          <!-- <a href="dashboard.php" id="begin-procedure" class="d-none btn theme-blue">Begin procedure</a> -->
           <a href="simulator.php" id="cancel-button" class="btn btn-secondary">Annuleer simulatie</a>
         </div>
 
@@ -272,7 +272,7 @@
         </div>
 
         <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
-          <a href="dashboard.php" id="begin-procedure" class="btn theme-blue">Begin procedure</a>
+          <a href="dashboard.php" id="begin-procedure" class="d-none btn theme-blue">Begin procedure</a>
           <a href="simulator.php" id="cancel-button" class="btn btn-secondary">Nieuwe simulatie</a>
         </div>
       </section>

@@ -81,6 +81,8 @@ const showPositiveResult = () => {
       resultsSection.classList.remove('d-none');
       positiveContainer.classList.remove('d-none');
     }
+
+    procedureBtn.classList.remove('d-none');
   }
 }
 

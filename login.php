@@ -70,12 +70,12 @@
         </div>
 
         <div class="login-card col-4 d-flex flex-column gap-4">
-          <a href="#" class="d-flex justify-content-between align-items-top gap-4 mb-3">
+          <a href="./includes/auth-itsme.inc.php" class="d-flex justify-content-between align-items-top gap-4 mb-3">
             <i class="bi bi-chevron-right"></i>
             <h5 class="align-self-start justify-self-start">itsme®</h5>
             <img class="justify-self-end" src="./assets/images/icons/itsme-auth.png" alt="Kaartlezer">
           </a>
-          <a href="./includes/auth-itsme.inc.php" class="btn btn-link d-flex align-self-end mt-5">Meer info</a>
+          <a href="#" class="btn btn-link d-flex align-self-end mt-5">Meer info</a>
         </div>
       </div>
      </section>

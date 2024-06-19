@@ -2,6 +2,6 @@
 
 session_start();
 $_SESSION['loggedin'] = true;
-
-header('Location: ./../dashboard/roadmap.php');
+$_SESSION['results'] = 'positive';
+header('Location: ./../dashboard/simulator-results.php');
 exit;

@@ -273,6 +273,17 @@ footer a {
   margin-left: 1rem;
 }
 
+#navbar-alt-container a {
+  text-decoration: none;
+  color: var(--theme-white);
+  font-family: 'Montserrat Medium', sans-serif;
+}
+
+.navbar-brand-alt {
+  height: 32px;
+  color: var(--theme-white);
+}
+
 .theme-pink {
   background: var(--theme-pink);
 }

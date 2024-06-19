@@ -25,7 +25,7 @@
   <!-- Start header content -->
   <header class="mb-4">
     <!-- Language switcher container -->
-    <div class="container d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mt-2">
+    <div class="container d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mt-3">
       <ul class="language-switcher d-flex gap-2 p-0 mb-0">
         <li><a href="#">EN</a></li>
         <li><a href="#">FR</a></li>
@@ -47,77 +47,37 @@
 
   <!-- Start main -->
   <main class="d-flex flex-column gap-5 mb-5 pb-5">
-    <!-- Intro section -->
-     <section class="container d-flex justify-content-between align-items-center mt-5 mb-5">
-      <img src="./assets/images/home-intro-image.jpg" alt="" class="w-50 rounded">
-      <div class="d-flex flex-column gap-4">
+      <!-- Authentication section -->
+     <section class="container d-flex flex-column gap-4 mt-5 mb-5">
+      <div class="d-flex flex-column gap-4 mb-4">
         <div>
           <h2>Aanmelden</h2>
           <span class="tag-line theme-blue"></span>
         </div>
-        <p>Kies hieronder hoe u wil aanmelden. Klik op "meer info" voor uitleg over  die manier van aanmelden. Klik op de knop "hulp nodig?" (rechts) voor  veelgestelde vragen over aanmelden of om contact op te nemen met de  helpdesk.</p>
+        <p>Kies hieronder hoe u wil aanmelden. Klik op "meer info" voor uitleg over  die manier van aanmelden.</p>
+        <p>Klik op de knop "hulp nodig?" (rechts) voor  veelgestelde vragen over aanmelden of om contact op te nemen met de  helpdesk.</p>
       </div>
-     </section>
 
-     <!-- Pillars section -->
-      <section class="container d-flex flex-column justify-content-center mt-5 mb-5">
-        <div class="text-center">
-          <h2>Waarom eduBridge?</h2>
-          <span class="tag-line theme-green"></span>
+      <div class="d-flex flex-wrap gap-5">
+        <div class="login-card col-4 d-flex flex-column gap-4">
+          <a href="roadmap.php" class="d-flex align-items-top gap-4">
+            <i class="bi bi-chevron-right"></i>
+            <h5>eID en aangesloten kaartlezer</h5>
+            <img class="justify-self-end" src="./assets/images/icons/id-auth.png" alt="Kaartlezer">
+          </a>
+          <span class="login-badge theme-green px-3 py-2 rounded ms-5">Veiligste keuze</span>
+          <a href="#" class="btn btn-link d-flex align-self-end">Meer info</a>
         </div>
 
-        <!-- Pillars -->
-         <div id="pillars-container" class="d-flex justify-content-between mt-5">
-          <!-- Pillar 1 -->
-          <div id="pillar-one" class="pillar position-relative rounded">
-            <div class="bg-overlay rounded"></div>
-            <div class="d-flex flex-column gap-3 position-absolute top-50 start-50 translate-middle w-75 mt-5 pt-5 text-center">
-              <h3 class="theme-purple">Toegankelijk</h3>
-              <p class="theme-purple">
-                We willen educatie zo toegankelijk mogelijken maken voor iedereen.
-              </p>
-            </div>
-          </div>
-
-          <!-- Pillar 2 -->
-          <div id="pillar-two" class="pillar position-relative rounded">
-            <div class="bg-overlay rounded"></div>
-            <div class="d-flex flex-column gap-3 position-absolute top-50 start-50 translate-middle w-75 mt-5 pt-5 text-center">
-              <h3 class="theme-pink">Gepersonaliseerd</h3>
-              <p class="theme-pink">
-                Iedereen heeft zijn eigen gepersonaliseerde traject.
-              </p>
-            </div>
-          </div>
-
-          <!-- Pillar 3 -->
-          <div id="pillar-three" class="pillar position-relative rounded">
-            <div class="bg-overlay rounded"></div>
-            <div class="d-flex flex-column gap-3 position-absolute top-50 start-50 translate-middle w-75 mt-5 pt-5 text-center">
-              <h3 class="theme-blue">Transparant</h3>
-              <p class="theme-blue">
-              Wij willen zo transparant mogelijk met onze gebruikers communiceren.
-              </p>
-            </div>
-          </div>
-
-         </div>
-
-         <a href="dashboard.php" class="btn theme-green mt-5 d-flex align-self-center">Ga naar dashboard</a>
-      </section>
-
-      <!-- Simulation section -->
-     <section class="container d-flex justify-content-between align-items-center mt-5 mb-5">
-      <div class="d-flex flex-column gap-4">
-        <div>
-          <h2>Simulaties en Procedures</h2>
-          <span class="tag-line theme-blue"></span>
+        <div class="login-card col-4 d-flex flex-column gap-4">
+          <a href="#" class="d-flex justify-content-between align-items-top gap-4 mb-3">
+            <i class="bi bi-chevron-right"></i>
+            <h5 class="align-self-start justify-self-start">itsme®</h5>
+            <img class="justify-self-end" src="./assets/images/icons/itsme-auth.png" alt="Kaartlezer">
+          </a>
+          <a href="#" class="btn btn-link d-flex align-self-end mt-5">Meer info</a>
         </div>
-        <p>Via ons platform kunt u op een eenvoudige manier simulaties uitvoeren uit om te zien welke financiële hulp je kunt krijgen en volg je aanvraagprocedures.</p>
-        <p>Ontdek nu meteen zonder te registreren of dat u voor iets in aanmerkingen zou kunnen komen door snel eens langs door onze simulator!</p>
-        <a href="simulator.php" class="btn theme-blue">Ontdek simulatie</a>
       </div>
-      <img src="./assets/images/home-simulation-image.jpg" alt="" class="w-50 rounded">
      </section>
   </main>
 

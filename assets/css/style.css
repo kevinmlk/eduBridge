@@ -63,6 +63,12 @@ h3 {
   font-size: 1.8em;
 }
 
+h5 {
+  font-family: 'Montserrat Medium', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
 p {
   font-size: 1.2em;
   max-width: 600px;
@@ -282,6 +288,44 @@ footer a {
 .navbar-brand-alt {
   height: 32px;
   color: var(--theme-white);
+}
+
+.login-card {
+  border: 2px solid var(--theme-gray-4);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.login-card a {
+  text-decoration: none;
+  color: var(--theme-black-2);
+}
+
+.login-card i {
+  color: var(--theme-blue);
+  padding: 4px 8px;
+  border: 1px solid var(--theme-blue);
+  border-radius: 500px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.login-card img {
+  height: 48px;
+}
+
+.login-badge {
+  width: fit-content;
+  font-size: .9em;
+  font-family: 'Montserrat Medium', sans-serif;
+}
+
+.btn.btn-link {
+  text-decoration: none;
+}
+
+.btn.btn-link:hover {
+  color: var(--theme-black-1);
 }
 
 .theme-pink {

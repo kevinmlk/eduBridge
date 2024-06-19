@@ -133,18 +133,38 @@
           </g>
         </svg>
         <!-- History button -->
-        <a href="#" class="roadmap-button theme-purple-light position-absolute top-50 translate-middle">
+        <button class="roadmap-button theme-purple-light position-absolute top-50 translate-middle" data-bs-toggle="modal" data-bs-target="#historyModal">
           <div class="roadmap-button-inner">
             <i class="bi bi-clock-history theme-purple"></i>
           </div>
-        </a>
+        </button>
         <!-- Future button -->
-        <a href="#" class="roadmap-button theme-green-light position-absolute top-50 translate-middle">
+        <button class="roadmap-button theme-green-light position-absolute top-50 translate-middle">
           <div class="roadmap-button-inner">
             <i class="bi bi-info-lg theme-green"></i>
           </div>
-        </a>
+        </button>
       </div>
+
+      <!-- History modal -->
+      <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="historyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="historyModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
   </main>
 
@@ -152,6 +172,6 @@
   <?php include_once(__DIR__ . '/../includes/footer.inc.php'); ?>
 
   <!-- Links JS scripts -->
-  <script scr="./../assets/js/app.js"></script>
+  <script scr="./../assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

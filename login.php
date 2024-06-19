@@ -60,7 +60,7 @@
 
       <div class="d-flex flex-wrap gap-5">
         <div class="login-card col-4 d-flex flex-column gap-4">
-          <a href="roadmap.php" class="d-flex align-items-top gap-4">
+          <a href="./includes/authenticate.inc.php" class="d-flex align-items-top gap-4">
             <i class="bi bi-chevron-right"></i>
             <h5>eID en aangesloten kaartlezer</h5>
             <img class="justify-self-end" src="./assets/images/icons/id-auth.png" alt="Kaartlezer">

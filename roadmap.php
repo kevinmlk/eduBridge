@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+  // Check if user is loggedin
+  session_start();
+
+  if (!isset($_SESSION['loggedin'])) {
+    header('Location: login.php');
+    exit;
+  }
+?><!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
@@ -29,7 +37,7 @@
           </ul>
           <div id="notification-container">
             <a href=""><i class="bi bi-bell me-2"></i>Notificaties(3)</a>
-            <a href=""><i class="bi bi-box-arrow-right me-2"></i>Afmelden</a>
+            <a href="./includes/logout.inc.php"><i class="bi bi-box-arrow-right me-2"></i>Afmelden</a>
           </div>
         </div>
 

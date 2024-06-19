@@ -2,8 +2,10 @@
   --theme-off-white: #F9FAFD;
   --theme-white: #FFFFFF;
   --theme-purple: #B3ADF7;
+  --theme-purple-light: rgba(179, 173, 247, .4);
   --theme-pink: #EE707B;
   --theme-green: #90D0BA;
+  --theme-green-light: rgba(144, 208, 186, .4);
   --theme-blue: #7FCFE4;
   --theme-black-1: #1C1A23;
   --theme-black-2: #2D2926;
@@ -125,10 +127,7 @@ footer a {
 }
 
 #roadmap-container {
-  background-image: url('../images/svg/roadmap.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
+  /* height: 500px; */
 }
 
 #footer-links {
@@ -336,6 +335,26 @@ footer a {
   height: 24px !important;
 }
 
+.roadmap-button {
+  height: fit-content;
+  width: fit-content;
+  padding: 14px 8px;
+  border-radius: 500px;
+  animation: blinker 2s linear infinite;
+  color: var(--theme-black-1);
+}
+
+.roadmap-button:hover {
+  cursor: pointer;
+}
+
+.roadmap-button i {
+  font-size: 32px;
+  padding: 8px 12px;
+  border-radius: 500px;
+  
+}
+
 .theme-pink {
   background: var(--theme-pink);
 }
@@ -350,4 +369,20 @@ footer a {
 
 .theme-purple {
   background: var(--theme-purple);
+}
+
+.theme-purple-light {
+  background: var(--theme-purple-light);
+  margin-left: 428px;
+}
+
+.theme-green-light {
+  background: var(--theme-green-light);
+  margin-left: 1128px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: .4;
+  }
 }

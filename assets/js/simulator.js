@@ -106,6 +106,8 @@ const showIncomeRoute = () => {
     if (incomeContainer.classList.contains('d-none')) {
       incomeContainer.classList.remove('d-none');
     }
+    
+    itsmeBtn.classList.remove('d-none');
   }
 }
 

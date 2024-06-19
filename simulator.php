@@ -213,6 +213,10 @@
             </div>
           </div>
 
+          <p class="text-center">
+            Als je niet weet hoeveel je inkomsten van het voorbij jaar bedroegen, kun je snel even met itsme® inloggen om deze na te gaan en een gedetailleerd resultaat te krijgen.
+          </p>
+
          </div>
 
          <!-- Schooltoeslag container -->

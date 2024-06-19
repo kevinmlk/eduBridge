@@ -98,6 +98,17 @@ footer a {
   color: var(--theme-white) !important;
 }
 
+.nav-link.active::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 500px;
+  background-color: var(--theme-blue);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #notification-container a {
   text-decoration: none;
   color: var(--theme-black-1);
@@ -147,13 +158,6 @@ footer a {
 
 .nav-link:hover {
   color: var(--theme-blue);
-}
-
-.nav-item .nav-link.active::after {
-  content: '';
-  width: 30px;
-  height: 30px;
-  background-color: var(--theme-blue);
 }
 
 .btn {

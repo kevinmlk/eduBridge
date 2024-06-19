@@ -328,6 +328,10 @@ footer a {
   color: var(--theme-black-1);
 }
 
+#itsme-button img {
+  height: 24px !important;
+}
+
 .theme-pink {
   background: var(--theme-pink);
 }

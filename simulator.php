@@ -173,6 +173,9 @@
                 <span>Nee</span>
             </div>
           </div>
+          <p class="text-center">
+          Meld je aan met itsme® om te weten te komen hoeveel studiepunten je nog over hebt en zo een meer gedetailleerd resultaat te krijgen.
+          </p>
 
          </div>
          
@@ -232,7 +235,7 @@
 
         <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
           <a href="#" id="return-button" class="d-none"><i class="bi bi-arrow-return-left"></i>Terug naar vorige vraag</a>
-          <!-- <a href="dashboard.php" id="begin-procedure" class="d-none btn theme-blue">Begin procedure</a> -->
+          <a href="login.php" id="itsme-button" class="d-none btn btn-secondary">Meld je aan met itsme <img class="ms-2" src="./assets/images/icons/itsme-auth.png" alt=""></a>
           <a href="simulator.php" id="cancel-button" class="btn btn-secondary">Annuleer simulatie</a>
         </div>
 

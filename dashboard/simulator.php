@@ -47,7 +47,7 @@
             <ul class="nav d-flex gap-2">
               <li class="nav-item"><a href="./roadmap.php" class="nav-link">Roadmap</a></li>
               <li class="nav-item"><a href="#" aria-current="page" class="nav-link active">Simulator</a></li>
-              <li class="nav-item"><a href="./procedures.php" class="nav-link">Procedures</a></li>
+              <li class="nav-item"><a href="./aanvraag.php" class="nav-link">Procedures</a></li>
               <li class="nav-item"><a href="./info-hub.php" class="nav-link">Info hub</a></li>
               <li class="nav-item"><a href="./profile.php" class="nav-link">Profiel</a></li>
             </ul>

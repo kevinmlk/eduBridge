@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Reset CSS -->
-  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./../assets/css/reset.css">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/bootstrap/icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./../assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./../assets/css/style.css">
   <!-- Tab title -->
   <title>kies jouw richting</title>
   <style>

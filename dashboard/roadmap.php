@@ -139,7 +139,7 @@
           </div>
         </button>
         <!-- Future button -->
-        <button class="roadmap-button theme-green-light position-absolute top-50 translate-middle">
+        <button class="roadmap-button theme-green-light position-absolute top-50 translate-middle" data-bs-toggle="modal" data-bs-target="#futureModal">
           <div class="roadmap-button-inner">
             <i class="bi bi-info-lg theme-green"></i>
           </div>
@@ -148,18 +148,47 @@
 
       <!-- History modal -->
       <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="historyModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="historyModalLabel">Modal title</h1>
+              <h1 class="modal-title fs-5" id="historyModalLabel">Educatie verleden</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              ...
-            </div>
+            <h class="modal-body">
+              <p>Hieronder een overzicht van alle opleiding die u in het verleden heeft gedaan en succesvol hebt afgerond. Voor meer details kunt je naar je profiel gaan.</p>
+              <hr>
+              <h2 class="fs-5">Graduaatsdiploma - 2009</h2>
+              <p>Winkelmanagement</p>
+              <hr>
+              <h2 class="fs-5">Diploma SO TSO - 2007</h2></h2>
+              <p>Commerciële organisatie</p>
+            </h>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn theme-blue">Profiel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Future modal -->
+      <div class="modal fade" id="futureModal" tabindex="-1" aria-labelledby="futureModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="historyModalLabel">Voorstellingen</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <h class="modal-body">
+              <p>Gebaseerd op uw doelen en interesses, stellen wij enkele relevante opleidingen voor u voor waarvoor u in aanmerking kunt komen voor een tegemoetkoming.</p>
+              <hr>
+              <h2 class="fs-5">Opleiding Syntra</h2>
+              <p>accountant/boekhouder</p>
+              <hr>
+              <h2 class="fs-5">Graduaatopleiding</h2></h2>
+              <p>Accountancy administration</p>
+            </h>
+            <div class="modal-footer">
+              <a href="./simulator.php" type="button" class="btn theme-blue">Simulator</a>
             </div>
           </div>
         </div>
@@ -172,6 +201,6 @@
   <?php include_once(__DIR__ . '/../includes/footer.inc.php'); ?>
 
   <!-- Links JS scripts -->
-  <script scr="./../assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./../assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

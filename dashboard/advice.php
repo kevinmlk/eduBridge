@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Reset CSS -->
-  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./../assets/css/reset.css">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/bootstrap/icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./../assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./../assets/css/style.css">
   <!-- Tab title -->
   <title>kies jouw richting</title>
   <style>
@@ -51,17 +51,16 @@
 
         <!-- Navigation container -->
         <div class="d-flex w-100 justify-content-between align-items-center">
-          <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
+          <a href="./roadmap.php" class="navbar-brand"><img class="me-2" src="./../assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
             <ul class="nav d-flex gap-2">
               <li class="nav-item"><a href="./roadmap.php" class="nav-link">Roadmap</a></li>
               <li class="nav-item"><a href="./simulator.php" class="nav-link">Simulator</a></li>
               <li class="nav-item"><a href="./procedures.php" class="nav-link active">Procedures</a></li>
               <li class="nav-item"><a href="./infohub.php" class="nav-link">Info Hub</a></li>
               <li class="nav-item"><a href="./profile.php" class="nav-link">Profiel</a></li>
-              <li class="nav-item ms-3"><a href="./login.php" class="btn theme-green">Kinderprofiel</a></li>
             </ul>
             <div class="d-flex align-items-center">
-              <a href="./logout.php" class="btn theme-green"><i class="bi bi-box-arrow-right me-2"></i>Afmelden</a>
+              <a href="./../includes/logout.inc.php" class="btn theme-green"><i class="bi bi-box-arrow-right me-2"></i>Afmelden</a>
             </div>
         </div>
       </div>
@@ -132,9 +131,9 @@
     </div>
   </main>
 
-  <?php include_once(__DIR__ . '/includes/footer.inc.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/footer.inc.php'); ?>
 
   <!-- Links JS scripts -->
-  <script src="./assets/js/app.js"></script>
+  <script src="./../assets/js/app.js"></script>
 </body>
 </html>

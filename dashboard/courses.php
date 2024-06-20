@@ -39,7 +39,7 @@
 
         <!-- Navigation container -->
         <div class="d-flex w-100 justify-content-between align-items-center">
-          <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
+          <a href="./roadmap.php" class="navbar-brand"><img class="me-2" src="./../assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
             <ul class="nav d-flex gap-2">
               <li class="nav-item"><a href="./about.php" aria-page="current" class="nav-link active">Over</a></li>
               <li class="nav-item"><a href="./news.php" class="nav-link">Nieuws</a></li>
@@ -66,7 +66,7 @@
         </div>
         <div class="col-12">
           <a href="advice.php" class="btn d-flex align-items-center justify-content-center mx-auto" style="background-color: #FF720E; color: white; width: fit-content;">
-            <img src="./assets/images/smartschoolicon.png" alt="Smartschool icon" class="me-2" style="width: 24px; height: 24px;">
+            <img src="./../assets/images/smartschoolicon.png" alt="Smartschool icon" class="me-2" style="width: 24px; height: 24px;">
             Log in met Smartschool
           </a>
         </div>
@@ -74,9 +74,9 @@
     </section>
   </main>
 
-  <?php include_once(__DIR__ . '/includes/footer.inc.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/footer.inc.php'); ?>
 
   <!-- Links JS scripts -->
-  <script src="./assets/js/app.js"></script>
+  <script src="./../assets/js/app.js"></script>
 </body>
 </html>

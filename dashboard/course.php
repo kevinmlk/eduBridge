@@ -6,24 +6,24 @@ $percentage = isset($_GET['percentage']) ? htmlspecialchars($_GET['percentage'])
 $subjects = [];
 if ($courseName === 'Handelswetenschappen') {
     $subjects = [
-        ['name' => 'Economie', 'icon' => './assets/images/dangericon.png', 'warning' => 'Let op! Je hebt mogelijk onvoldoende achtergrond in economie voor de richting Handelswetenschappen. Overweeg extra voorbereiding of bijscholing.'],
-        ['name' => 'Inleiding boekhouden', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Handels verrichtingen', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Bedrijfskunde', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Mens en samenleving', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Recht', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Informatica', 'icon' => './assets/images/checkicon.png'],
+        ['name' => 'Economie', 'icon' => './../assets/images/dangericon.png', 'warning' => 'Let op! Je hebt mogelijk onvoldoende achtergrond in economie voor de richting Handelswetenschappen. Overweeg extra voorbereiding of bijscholing.'],
+        ['name' => 'Inleiding boekhouden', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Handels verrichtingen', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Bedrijfskunde', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Mens en samenleving', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Recht', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Informatica', 'icon' => './../assets/images/checkicon.png'],
     ];
 } else {
     // Default subjects for other courses
     $subjects = [
-        ['name' => 'wiskunde', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Fysica', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Informatica', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Chemie', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Mechanica', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Ingenieursvaardigheden', 'icon' => './assets/images/checkicon.png'],
-        ['name' => 'Materiaalkunde', 'icon' => './assets/images/checkicon.png'],
+        ['name' => 'wiskunde', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Fysica', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Informatica', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Chemie', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Mechanica', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Ingenieursvaardigheden', 'icon' => './../assets/images/checkicon.png'],
+        ['name' => 'Materiaalkunde', 'icon' => './../assets/images/checkicon.png'],
     ];
 }
 ?>
@@ -33,8 +33,8 @@ if ($courseName === 'Handelswetenschappen') {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./../assets/css/style.css">
   <title>Course Details</title>
   <style>
     .progress-bar-custom {
@@ -107,17 +107,16 @@ if ($courseName === 'Handelswetenschappen') {
 
         <!-- Navigation container -->
         <div class="d-flex w-100 justify-content-between align-items-center">
-          <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
+          <a href="./roadmap.php" class="navbar-brand"><img class="me-2" src="./../assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
             <ul class="nav d-flex gap-2">
               <li class="nav-item"><a href="./roadmap.php" class="nav-link">Roadmap</a></li>
               <li class="nav-item"><a href="./simulator.php" class="nav-link">Simulator</a></li>
               <li class="nav-item"><a href="./procedures.php" class="nav-link active">Procedures</a></li>
               <li class="nav-item"><a href="./infohub.php" class="nav-link">Info Hub</a></li>
               <li class="nav-item"><a href="./profile.php" class="nav-link">Profiel</a></li>
-              <li class="nav-item ms-3"><a href="./login.php" class="btn theme-green">Kinderprofiel</a></li>
             </ul>
             <div class="d-flex align-items-center">
-              <a href="./logout.php" class="btn theme-green"><i class="bi bi-box-arrow-right me-2"></i>Afmelden</a>
+              <a href="./../logout.php" class="btn theme-green"><i class="bi bi-box-arrow-right me-2"></i>Afmelden</a>
             </div>
         </div>
       </div>
@@ -164,9 +163,9 @@ if ($courseName === 'Handelswetenschappen') {
   </div>
 
   <!-- Footer -->
-  <?php include_once(__DIR__ . '/includes/footer.inc.php'); ?>
+  <?php include_once(__DIR__ . '/../includes/footer.inc.php'); ?>
 
   <!-- Bootstrap JS -->
-  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

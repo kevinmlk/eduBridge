@@ -340,6 +340,7 @@ footer a {
   width: fit-content;
   padding: 14px 8px;
   border-radius: 500px;
+  border: none;
   animation: blinker 2s linear infinite;
   color: var(--theme-black-1);
 }

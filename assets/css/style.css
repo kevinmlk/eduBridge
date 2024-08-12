@@ -173,6 +173,7 @@ footer a {
   border: 1px solid var(--theme-black-1);
 }
 
+
 .btn:hover {
   background-color: var(--theme-gray-2);
 }
@@ -181,6 +182,11 @@ footer a {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
+}
+
+#belgium-link a {
+  text-decoration: none;
+  color: var(--theme-black-1);
 }
 
 #home-hero {

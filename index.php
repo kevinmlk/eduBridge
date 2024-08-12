@@ -27,21 +27,18 @@
             <li><a href="#" class="active-lang">NL</a></li>
             <li><a href="#">DE</a></li>
           </ul>
-          <p class="fs-6">
-            Officiële informatie en diensten: www.belgium.be
+          <p id="belgium-link" class="fs-6">
+            Officiële informatie en diensten: <a href="https://www.belgium.be" target="_blank">www.belgium.be</a>
           </p>
         </div>
 
         <!-- Navigation container -->
         <div class="d-flex w-100 justify-content-between align-items-center">
           <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
-            <ul class="nav d-flex gap-2">
-              <li class="nav-item"><a href="#" class="nav-link">Over</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Nieuws</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-              <li class="nav-item ms-3"><a href="./login.php" class="btn theme-green"><i class="bi bi-person-circle me-2"></i>Aanmelden</a></li>
-            </ul>
+          <div class="d-flex gap-4">
+            <a href="./login.php" class="btn theme-blue">Ontdek simulator</a>
+            <a href="./login.php" class="btn theme-green"><i class="bi bi-person-circle me-2"></i>Aanmelden</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -62,8 +59,10 @@
       </p>
       
       <p>
-      Of u nu een student, een ouder of een volwassen leerling bent, wij zijn er om u bij elke stap te ondersteunen.
+      Met onze simulator kunnen we samen na gaan welke stappen je moet nemen om je educatieve reis te ontgrendelen.
       </p>
+
+      <a href="simulator.php" class="btn theme-blue mt-3">Ontdek simulator</a>
       </div>
     </section>
 
@@ -76,7 +75,7 @@
           <span class="tag-line theme-blue"></span>
         </div>
         <p>EduBridge is een innovatief platform dat alle beschikbare educatieve  hulpmiddelen en ondersteuning op één plek samenbrengt. Ons doel is om  het proces van het vinden en aanvragen van educatieve ondersteuning  eenvoudig en transparant te maken. </p>
-        <p>Of je nu op zoek bent naar financiële  hulp, informatie over cursussen, of begeleiding bij je leertraject,  EduBridge biedt een gepersonaliseerde ervaring die speciaal is afgestemd  op jouw behoeften.</p>
+        <a href="./login.php" class="btn theme-green d-flex mt-3">Ga naar dashboard</a>
       </div>
      </section>
 
@@ -121,25 +120,8 @@
               </p>
             </div>
           </div>
-
          </div>
-
-         <a href="./login.php" class="btn theme-green mt-5 d-flex align-self-center">Ga naar dashboard</a>
       </section>
-
-      <!-- Simulation section -->
-     <section class="container d-flex justify-content-between align-items-center mt-5 mb-5">
-      <div class="d-flex flex-column gap-4">
-        <div>
-          <h2>Simulaties en Procedures</h2>
-          <span class="tag-line theme-blue"></span>
-        </div>
-        <p>Via ons platform kunt u op een eenvoudige manier simulaties uitvoeren uit om te zien welke financiële hulp je kunt krijgen en volg je aanvraagprocedures.</p>
-        <p>Ontdek nu meteen zonder te registreren of dat u voor iets in aanmerkingen zou kunnen komen door snel eens langs door onze simulator!</p>
-        <a href="simulator.php" class="btn theme-blue">Ontdek simulatie</a>
-      </div>
-      <img src="./assets/images/home-simulation-image.jpg" alt="" class="w-50 rounded">
-     </section>
   </main>
 
   <!-- Start footer -->

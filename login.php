@@ -1,4 +1,7 @@
 <?php
+  // Includ bootstrap
+  include_once(__DIR__ . '/bootstrap.php');
+
   // Check if user is already logged in
   session_start();
 
@@ -6,6 +9,10 @@
     header('Location: ./dashboard/roadmap.php');
     exit;
   }
+
+  // if (!empty($_POST)) {
+
+  // }
 ?><!DOCTYPE html>
 <html lang="nl">
 <head>

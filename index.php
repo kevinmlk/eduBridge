@@ -34,7 +34,7 @@
 
         <!-- Navigation container -->
         <div class="d-flex w-100 justify-content-between align-items-center">
-          <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
+          <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
           <div class="d-flex gap-4">
             <a href="./login.php" class="btn theme-blue">Ontdek simulator</a>
             <a href="./login.php" class="btn theme-green"><i class="bi bi-person-circle me-2"></i>Aanmelden</a>

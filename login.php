@@ -59,7 +59,7 @@
 
         <!-- Navigation container -->
         <div class="d-flex w-100 justify-content-between align-items-center">
-          <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/edubridge-logo.svg" alt="eduBridge logo">eduBridge</a>
+          <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
         </div>
       </div>
     </nav>

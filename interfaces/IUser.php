@@ -1,5 +1,5 @@
 <?php
 
-  interface IUser {
-    public function login();
-  }
+interface IUser {
+  public function login();
+}

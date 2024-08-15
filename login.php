@@ -10,9 +10,19 @@
     exit;
   }
 
-  // if (!empty($_POST)) {
+  if (!empty($_POST)) {
+    $user = new User();
+    $user->setEmail($_POST['email']);
+    $user->setPassword($_POST['password']);
 
-  // }
+    if ($user->login()) {
+      $_SESSION['loggedin'] = true;
+      header('Location: ./dashboard/roadmap.php');
+      exit;
+    } else {
+      $error = true;
+    }
+  }
 ?><!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -68,14 +78,14 @@
             Vul de inputvelden in met uw gegevens om aan te melden.
           </p>
         </div>
-        <form class="mt-5">
+        <form action="login.php" method="post" class="mt-5">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1">
+            <input type="email" class="form-control" name="email" id="email">
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Wachtwoord</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" class="form-control" name="password" id="password">
           </div>
           <button type="submit" class="btn theme-green">Aanmelden</button>
         </form>

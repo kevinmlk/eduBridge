@@ -52,8 +52,8 @@
   <main class="d-flex flex-column gap-5 mb-5 pb-5">
 
     <!-- Intro section -->
-     <section class="container mt-5 mb-5">
-      <div>
+     <section class="container d-flex gap-5 mt-5 mb-5">
+      <div class="col">
         <div>
           <h2>Welkom terug</h2>
           <span class="tag-line theme-blue"></span>
@@ -75,7 +75,7 @@
       </div>
       
       <!-- Carousel -->
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleAutoplaying" class="carousel slide col" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./assets/images/pillar-image-1.jpg" class="d-block w-100" alt="...">
@@ -87,14 +87,6 @@
             <img src="./assets/images/pillar-image-3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
      </section>
   </main>
@@ -105,7 +97,7 @@
   <!-- Links JS scripts -->
   <script src="./assets/js/app.js"></script>
   <!-- Bootstrap -->
-   <scripts src="./assets/bootstrap/js/bootstrap.min.js"></scripts>
-   <scripts src="./assets/bootstrap/js/bootstrap.bundle.min.js"></scripts>
+   <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="./../assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Glide.js -->
   <link rel="stylesheet" href="./../assets/glide/css/glide.core.min.css">
-  <link rel="stylesheet" href="./../assets/glide/css/glide.theme.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./../assets/css/style.css">
   <!-- Tab title -->
@@ -61,8 +60,8 @@
 
   <!-- Start main -->
   <main class="mb-5">
-    <section class="container">
-      <div class="d-flex flex-column justify-content-center align-items-center text-center gap-4">
+    <section class="">
+      <div class="container d-flex flex-column justify-content-center align-items-center text-center gap-4">
         <div>
           <h2 class="mt-5">Welke tegemoetkomingen zijn er?</h2>
           <span class="tag-line theme-purple"></span>
@@ -72,19 +71,66 @@
 
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide"><img src="./../assets/images/pillar-image-1.jpg" alt=""></li>
-            <li class="glide__slide"><img src="./../assets/images/pillar-image-2.jpg" alt=""></li>
-            <li class="glide__slide"><img src="./../assets/images/pillar-image-3.jpg" alt=""></li>
+          <ul id="info-hub-glides-container" class="glide__slides">
+            <!-- Opleidingsverlof -->
+            <li class="glide__slide">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Opleidingsverlof</h5>
+                  <p class="card-text">Onder bepaalde voorwaarden, kan je afwezig zijn van het werk om een opleiding te volgen.</p>
+                  <a href="#" class="btn btn-link">Meer info</a>
+                </div>
+              </div>
+            </li>
+            <!-- Opleidingsverlof -->
+            <li class="glide__slide">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Opleidingsverlof</h5>
+                  <p class="card-text">Onder bepaalde voorwaarden, kan je afwezig zijn van het werk om een opleiding te volgen.</p>
+                  <a href="#" class="btn btn-link">Meer info</a>
+                </div>
+              </div>
+            </li>
+            <!-- Opleidingsverlof -->
+            <li class="glide__slide">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Opleidingsverlof</h5>
+                  <p class="card-text">Onder bepaalde voorwaarden, kan je afwezig zijn van het werk om een opleiding te volgen.</p>
+                  <a href="#" class="btn btn-link">Meer info</a>
+                </div>
+              </div>
+            </li>
+            <!-- Opleidingsverlof -->
+            <li class="glide__slide">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Opleidingsverlof</h5>
+                  <p class="card-text">Onder bepaalde voorwaarden, kan je afwezig zijn van het werk om een opleiding te volgen.</p>
+                  <a href="#" class="btn btn-link">Meer info</a>
+                </div>
+              </div>
+            </li>
+            <!-- Opleidingsverlof -->
+            <li class="glide__slide">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Opleidingsverlof</h5>
+                  <p class="card-text">Onder bepaalde voorwaarden, kan je afwezig zijn van het werk om een opleiding te volgen.</p>
+                  <a href="#" class="btn btn-link">Meer info</a>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
 
-      <div class="glide__arrows" data-glide-el="controls">
+      <div class="glide__arrows d-flex gap-2 justify-content-center mt-4" data-glide-el="controls">
         <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
         <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
       </div>
 
-      </div>
+    </div>
 
 
 
@@ -98,7 +144,11 @@
   <script src="./../assets/glide/js/glide.min.js"></script>
 
   <script>
-    new Glide('.glide').mount()
+    new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 4
+    }).mount()
   </script>
 
 

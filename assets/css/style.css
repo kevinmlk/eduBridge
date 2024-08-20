@@ -363,6 +363,14 @@ footer a {
   
 }
 
+#info-hub-glides-container .glide__slide {
+  max-width: 375px;
+}
+
+#info-hub-glides-container .glide__arrows .glide__arrow {
+  
+}
+
 #profile-cards-container .card {
   max-width: 620px;
 }

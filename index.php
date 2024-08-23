@@ -67,7 +67,7 @@
     </section>
 
     <!-- Intro section -->
-     <section class="container d-flex justify-content-between align-items-center mt-5 mb-5">
+     <section class="media-image container d-flex justify-content-between align-items-center mt-5 mb-5">
       <img src="./assets/images/home-intro-image.jpg" alt="" class="w-50 rounded">
       <div class="d-flex flex-column gap-4">
         <div>
@@ -92,7 +92,7 @@
           <div id="pillar-one" class="pillar position-relative rounded">
             <div class="bg-overlay rounded"></div>
             <div class="d-flex flex-column gap-3 position-absolute top-50 start-50 translate-middle w-75 mt-5 pt-5 text-center">
-              <h3 class="theme-purple">Toegankelijk</h3>
+              <h4 class="theme-purple">Toegankelijk</h4>
               <p class="theme-purple">
                 We willen educatie zo toegankelijk mogelijken maken voor iedereen.
               </p>
@@ -103,7 +103,7 @@
           <div id="pillar-two" class="pillar position-relative rounded">
             <div class="bg-overlay rounded"></div>
             <div class="d-flex flex-column gap-3 position-absolute top-50 start-50 translate-middle w-75 mt-5 pt-5 text-center">
-              <h3 class="theme-pink">Gepersonaliseerd</h3>
+              <h4 class="theme-pink">Gepersonaliseerd</h4>
               <p class="theme-pink">
                 Iedereen heeft zijn eigen gepersonaliseerde traject.
               </p>
@@ -114,7 +114,7 @@
           <div id="pillar-three" class="pillar position-relative rounded">
             <div class="bg-overlay rounded"></div>
             <div class="d-flex flex-column gap-3 position-absolute top-50 start-50 translate-middle w-75 mt-5 pt-5 text-center">
-              <h3 class="theme-blue">Transparant</h3>
+              <h4 class="theme-blue">Transparant</h4>
               <p class="theme-blue">
               Wij willen zo transparant mogelijk met onze gebruikers communiceren.
               </p>

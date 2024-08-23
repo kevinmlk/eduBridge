@@ -342,6 +342,124 @@ footer a {
   height: 24px !important;
 }
 
+.timeline-wrapper {
+  max-width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline {
+  height: .12rem;
+  width: 100%;
+  padding: 0 4rem;
+  background-color: #888;
+  list-style-type: none;
+  --scale: 1;
+  display: flex;
+}
+
+.timeline li {
+  position: relative;
+  width: 20rem;
+}
+
+.timeline li::before,
+.timeline li::after,
+.timeline li .title,
+.data {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%), scale(var(--scale));
+  transition: .5s ease;
+}
+
+.timeline li::before {
+  content: "";
+  top: 1rem;
+  display: inline-block;
+  width: .12rem;
+  height: 1rem;
+  background-color: #888;
+}
+
+.timeline li:nth-child(even)::before {
+  top: -1rem;
+}
+
+.timeline li:hover::before {
+  background-color: blue;
+}
+
+.timeline li::after {
+  content: attr(data-date);
+  top: -3.4rem;
+}
+
+.timeline li:nth-child(odd)::after {
+  top: 3.4rem;
+}
+
+.timeline li:hover:after,
+.timeline li .title {
+  color: blue;
+}
+
+.timeline li .title {
+  top: 2.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  white-space: pre;
+  opacity: 0;
+}
+
+.timeline li:nth-child(odd) >.title {
+  top: -2.4rem;
+}
+
+.timeline li:hover .title {
+  opacity: 1;
+}
+
+.data {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #888;
+  color: #fff !important;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.timeline li:hover .data {
+  background-color: blue;
+  --scale: 1.2;
+  cursor: pointer;
+}
+
+.data.show {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 100;
+  box-shadow: 0 .1rem .4rem #0004;
+}
+
+.data h3 {
+  text-transform: capitalize;
+}
+
+.data p {
+  background-color: #fff3;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
 .roadmap-button {
   height: fit-content;
   width: fit-content;
@@ -367,9 +485,9 @@ footer a {
   max-width: 375px;
 }
 
-#info-hub-glides-container .glide__arrows .glide__arrow {
+/* #info-hub-glides-container .glide__arrows .glide__arrow {
   
-}
+} */
 
 #profile-cards-container .card {
   max-width: 620px;
@@ -406,3 +524,6 @@ footer a {
     opacity: .4;
   }
 }
+
+/* Responsive CSS */
+

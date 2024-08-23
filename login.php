@@ -6,7 +6,7 @@
   session_start();
 
   if (isset($_SESSION['loggedin'])) {
-    header('Location: ./dashboard/roadmap.php');
+    header('Location: ./dashboard/index.php');
     exit;
   }
 
@@ -17,7 +17,7 @@
 
     if ($user->login()) {
       $_SESSION['loggedin'] = true;
-      header('Location: ./dashboard/roadmap.php');
+      header('Location: ./dashboard/index.php');
       exit;
     } else {
       $error = true;

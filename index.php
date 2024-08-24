@@ -20,7 +20,7 @@
     <nav class="navbar">
       <div class="container">
         <!-- Language switcher container -->
-        <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
+        <div id="top-navbar" class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
           <ul class="language-switcher d-flex gap-2 p-0 mb-0">
             <li><a href="#">EN</a></li>
             <li><a href="#">FR</a></li>
@@ -33,8 +33,9 @@
         </div>
 
         <!-- Navigation container -->
-        <div class="d-flex w-100 justify-content-between align-items-center">
+        <div id="navigation-container" class="d-flex w-100 justify-content-between align-items-center">
           <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
+          <a href="index.php" class="navbar-brand-small"><img class="me-2" src="./assets/images/logo/logo-b.png" alt="eduBridge logo"></a>
           <div class="d-flex gap-4">
             <a href="./login.php" class="btn theme-blue">Ontdek simulator</a>
             <a href="./login.php" class="btn theme-green"><i class="bi bi-person-circle me-2"></i>Aanmelden</a>
@@ -49,20 +50,20 @@
     <!-- Hero section -->
     <section id="home-hero" class="position-relative mb-5">
       <div class="bg-overlay"></div>
-      <div class="container d-flex flex-column gap-4 position-absolute top-50 start-50 translate-middle">
-      <div>
-        <h1>Ontgrendel uw<br> educatieve reis</h1>
-        <span class="tag-line theme-pink"></span>
-      </div>
-      <p>
-      Bij eduBridge geloven we dat onderwijs voor iedereen toegankelijk moet zijn.
-      </p>
-      
-      <p>
-      Met onze simulator kunnen we samen na gaan welke stappen je moet nemen om je educatieve reis te ontgrendelen.
-      </p>
+      <div id="home-hero-text" class="container d-flex flex-column gap-4 position-absolute top-50 start-50 translate-middle">
+        <div>
+          <h1>Ontgrendel uw<br> educatieve reis</h1>
+          <span class="tag-line theme-pink"></span>
+        </div>
+        <p>
+        Bij eduBridge geloven we dat onderwijs voor iedereen toegankelijk moet zijn.
+        </p>
+        
+        <p>
+        Met onze simulator kunnen we samen na gaan welke stappen je moet nemen om je educatieve reis te ontgrendelen.
+        </p>
 
-      <a href="simulator.php" class="btn theme-blue mt-3">Ontdek simulator</a>
+        <a href="simulator.php" class="btn theme-blue mt-3">Ontdek simulator</a>
       </div>
     </section>
 

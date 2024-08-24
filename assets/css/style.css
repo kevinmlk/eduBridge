@@ -132,6 +132,10 @@ footer a {
   height: 40px !important;
 }
 
+.navbar-brand-small {
+  display: none;
+}
+
 #roadmap-container {
   /* height: 500px; */
 }
@@ -594,12 +598,13 @@ footer a {
   }
 
   #pillars-container {
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
   }
 
   .pillar {
-    width: 300px;
+    width: 450px;
   }
 
   #footer-navigation {
@@ -629,5 +634,84 @@ footer a {
   #footer-legal .language-switcher {
     flex-direction: row;
     gap: .5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #top-navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-brand-small {
+    display: block;
+  }
+
+  .navbar-brand-small img {
+    height: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+  
+  p {
+    max-width: 350px;
+  }
+
+  #belgium-link {
+    text-align: center;
+  }
+
+  #home-hero-text {
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .media-image img {
+    width: 350px !important;
+  }
+
+  .pillar {
+    width: 350px;
+  }
+
+  #footer-links {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #footer-navigation {
+    gap: 2rem !important;
+    height: 250px;
+  }
+
+  #footer-socials {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 476px) {
+  #navigation-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }

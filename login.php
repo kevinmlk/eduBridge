@@ -69,39 +69,57 @@
   <main class="d-flex flex-column gap-5 mb-5 pb-5">
 
     <!-- Intro section -->
-     <section class="container d-flex gap-5 mt-5 mb-5">
-      <div class="col">
+     <section class="container d-flex justify-content-between align-items-center mt-5 mb-5">
+      <div class="">
         <div>
           <h2>Welkom terug</h2>
           <span class="tag-line theme-blue"></span>
           <p class="mt-4">
-            Vul de inputvelden in met uw gegevens om aan te melden.
+            Vul de inputvelden in of meld je aan met een van de onderstaande methoden.
           </p>
         </div>
-        <form action="login.php" method="post" class="mt-5">
-          <div class="mb-3">
+        <form action="login.php" method="post" class="mt-4">
+          <div class="mb-4 input-group-lg">
             <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" name="email" id="email">
+            <input type="email" class="form-control" name="email" id="email" placeholder="zvDyG@example.com">
           </div>
-          <div class="mb-3">
+          <div class="mb-4 input-group-lg">
             <label for="exampleInputPassword1" class="form-label">Wachtwoord</label>
-            <input type="password" class="form-control" name="password" id="password">
+            <input type="password" class="form-control" name="password" id="password" placeholder="********">
           </div>
-          <button type="submit" class="btn theme-green">Aanmelden</button>
+          <button type="submit" class="btn theme-green mt-3">Aanmelden</button>
         </form>
+        <hr class="my-5">
+        <p class="mb-3">Of meld je aan met:</p>
+        <div class="d-flex gap-3">
+          <a href="#" id="itsme-button" class="btn btn-secondary"><img class="me-2" src="./assets/images/icons/itsme-auth.png" alt="">Aanmelden met itsme</a>
+          <a href="#" id="id-button" class="btn btn-secondary"><img class="me-2" src="./assets/images/icons/id-auth-alt.png" alt="">Aanmelden met eID</a>
+        </div>
       </div>
       
       <!-- Carousel -->
-      <div id="carouselExampleAutoplaying" class="carousel slide col" data-bs-ride="carousel">
+      <div id="login-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/images/pillar-image-1.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/images/login-slider-1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Student in het hoger onderwijs</h5>
+              <p>Is je kind tussen 18 en 25 jaar en volgt het hoger onderwijs? Dan kan het nog recht hebben op een Groeipakket onder voorwaarden.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./assets/images/pillar-image-2.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/images/login-slider-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sociale toeslag Groeipakket</h5>
+              <p>100.000 extra kinderen hebben recht op sociale toeslag van het Groeipakket.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./assets/images/pillar-image-3.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/images/login-slider-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Geen wachtijden meer voor zorgtoeslag</h5>
+              <p>Nu de achterstand is weggewerkt, wordt er gefocust op het wegwerken van drempels bij aanvragen.</p>
+            </div>
           </div>
         </div>
       </div>

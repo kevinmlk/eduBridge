@@ -351,6 +351,25 @@ footer a {
   height: 24px !important;
 }
 
+.carousel-item {
+  height: 750px;
+  width: 575px !important;
+}
+
+.carousel-item img {
+  border-radius: 8px;
+  height: 750px !important;
+  width: fit-content;
+}
+
+#itsme-button img {
+  height: 80px;
+}
+
+#id-button img {
+  height: 24px;
+}
+
 .timeline-wrapper {
   max-width: 100vw;
   height: 80vh;

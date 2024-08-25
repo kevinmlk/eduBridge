@@ -238,6 +238,10 @@ class User implements IUser {
     
     // Store results
     $user = $statement->fetch(PDO::FETCH_ASSOC);
+
+    // Store user id in session
+    $_SESSION['id'] = $user['Id'];
+
     return $user;
   }
 
@@ -269,5 +273,17 @@ class User implements IUser {
     // Execute query
     $result = $statement->execute();
     return $result;
+  }
+
+  // Method to get the current user info
+  public static function getUserInfo() {
+    // Get connection
+    $conn = Db::getConnection();
+    $statement = $conn->prepare("SELECT * FROM user_education INNER JOIN users ON user_education.UserId = users.Id INNER JOIN programmes ON user_education.ProgrammeId = programmes.Id  WHERE user_education.UserId = :id");
+    $id = $_SESSION['id'];
+    $statement->bindParam(':id', $id);
+    $statement->execute();
+    $user = $statement->fetch(PDO::FETCH_ASSOC);
+    return $user;
   }
 }

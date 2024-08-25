@@ -474,6 +474,14 @@ position: absolute;
   max-width: 620px;
 }
 
+.chip {
+  border-radius: 8px;
+  border: 1px solid var(--theme-black-2);
+  padding: .5rem 1rem;
+  font-size: .9em;
+  
+}
+
 .theme-pink {
   background: var(--theme-pink);
 }

@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="./../assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./../assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../assets/images/favicon/favicon.ico">
   <!-- Tab title -->
   <title>Tijdslijn | eduBridge Belgium</title>
 </head>
@@ -72,18 +74,22 @@
               <!-- Timestamp -->
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
                 <h4>2018</h4>
+                <i class="bi bi-bullseye"></i>
               </button>
               <!-- Timestamp -->
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
                 <h4>2019</h4>
+                <i class="bi bi-bullseye"></i>
               </button>
               <!-- Timestamp -->
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
                 <h4>2020</h4>
+                <i class="bi bi-bullseye"></i>
               </button>
               <!-- Timestamp -->
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
                 <h4>Toekomst</h4>
+                <i class="bi bi-bullseye"></i>
               </button>
             </div>
             <!-- Carousel container -->

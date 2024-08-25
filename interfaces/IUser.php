@@ -7,4 +7,6 @@ interface IUser {
   // Method for account creation
   public function createAccount();
 
+  public static function getUserInfo();
+
 }

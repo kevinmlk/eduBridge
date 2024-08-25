@@ -1,4 +1,7 @@
 <?php
+  // Include bootstrap
+  include_once(__DIR__ . '/../bootstrap.php');
+
   // Check if user is loggedin
   session_start();
 
@@ -6,6 +9,19 @@
     header('Location: ./../login.php');
     exit;
   }
+
+  // Get user info
+  $userInfo = User::getUserInfo();
+
+  // Get user edu history
+  $userEduHistory = Programme::getUserEduHistory();
+
+  // Get user interests
+  $userInterests = Interest::getUserInterests();
+
+  // Get user preferences
+  $userPreferences = Preference::getUserPreferences();
+
 ?><!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -81,19 +97,19 @@
             <ul class="list-group list-group-flush d-flex flex-column gap-3 mt-3">
               <li class="list-group-item d-flex gap-5">
                 <span class="fw-bold w-25 mb-1">Naam</span>
-                <span>John Doe</span>
+                <span><?php echo $userInfo['Firstname'] . ' ' . $userInfo['Lastname']; ?></span>
               </li>
               <li class="list-group-item d-flex gap-5">
                 <span class="fw-bold w-25 mb-1">Geboortedatum</span>
-                <span>2 April 1989</span>
+                <span><?php echo $userInfo['Birthday']; ?></span>
               </li>
               <li class="list-group-item d-flex gap-5">
                 <span class="fw-bold w-25 mb-1">Geslacht</span>
-                <span>Vrouwelijk</span>
+                <span><?php echo $userInfo['Gender']; ?></span>
               </li>
               <li class="list-group-item d-flex gap-5">
                 <span class="fw-bold w-25 mb-1">Kinderen</span>
-                <span>1</span>
+                <span><?php echo $userInfo['Children']; ?></span>
               </li>
             </ul>
           </div>
@@ -104,28 +120,25 @@
           <div class="card-body">
             <h3 class="card-title">Contactgegevens</h3>
             <p class="card-subtitle">
-              Bepaalde informatie hebben wij van uw burgerprofiel gehaald en kunt u mogelijk niet aanpassen.
+            Hier krijgt je een verzameling van al jouw bewaarde contactgegevens. Je kunt bestaande gegevens wijzigen of nieuwe contactgegevens toevoegen.
             </p>
   
             <!-- List group -->
             <ul class="list-group list-group-flush d-flex flex-column gap-3 mt-3">
               <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Naam</span>
-                <span>John Doe</span>
+                <span class="fw-bold w-25 mb-1">E-mail</span>
+                <span><?php echo $userInfo['Email']; ?></span>
               </li>
               <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Geboortedatum</span>
-                <span>2 April 1989</span>
+                <span class="fw-bold w-25 mb-1">Telefoon</span>
+                <span><?php echo $userInfo['Phone']; ?></span>
               </li>
               <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Geslacht</span>
-                <span>Vrouwelijk</span>
-              </li>
-              <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Kinderen</span>
-                <span>1</span>
+                <span class="fw-bold w-25 mb-1">Adres</span>
+                <span><?php echo $userInfo['Address']; ?></span>
               </li>
             </ul>
+            <a class="btn btn-secondary my-3" href="">Contactgegevens wijzigen</a>
           </div>
         </div>
 
@@ -134,28 +147,24 @@
           <div class="card-body">
             <h3 class="card-title">Educatie verleden</h3>
             <p class="card-subtitle">
-              Bepaalde informatie hebben wij van uw burgerprofiel gehaald en kunt u mogelijk niet aanpassen.
+            Bepaalde informatie hebben wij van uw burgerprofiel gehaald, je kunt eventueel nog zelf behaalde diploma’s/getuigschriften toevoegen.
             </p>
   
             <!-- List group -->
+            <?php if (!empty($userEduHistory)): ?>
             <ul class="list-group list-group-flush d-flex flex-column gap-3 mt-3">
+              
+              <?php foreach ($userEduHistory as $edu) : ?>
               <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Naam</span>
-                <span>John Doe</span>
+                <span class="fw-bold w-25 mb-1"><?php echo $edu['Type']; ?></span>
+                <span><?php echo $edu['Level'] . ' ' . $edu['Name']; ?>	</span>
               </li>
-              <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Geboortedatum</span>
-                <span>2 April 1989</span>
-              </li>
-              <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Geslacht</span>
-                <span>Vrouwelijk</span>
-              </li>
-              <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Kinderen</span>
-                <span>1</span>
-              </li>
+              <?php endforeach; ?>
             </ul>
+            <?php else: ?>
+            <p class="my-4"><b>Uw educatie verleden is momenteel onbekend.</b></p>
+            <?php endif; ?>
+            <a class="btn btn-secondary my-3" href="">Educatie verleden wijzigen</a>
           </div>
         </div>
         
@@ -167,31 +176,36 @@
               Bepaalde informatie hebben wij van uw burgerprofiel gehaald en kunt u mogelijk niet aanpassen.
             </p>
   
-            <!-- List group -->
-            <ul class="list-group list-group-flush d-flex flex-column gap-3 mt-3">
-              <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Naam</span>
-                <span>John Doe</span>
-              </li>
-              <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Geboortedatum</span>
-                <span>2 April 1989</span>
-              </li>
-              <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Geslacht</span>
-                <span>Vrouwelijk</span>
-              </li>
-              <li class="list-group-item d-flex gap-5">
-                <span class="fw-bold w-25 mb-1">Kinderen</span>
-                <span>1</span>
-              </li>
-            </ul>
+            <!-- Interests group -->
+            <div class="d-flex flex-column gap-3 mt-3">
+              <h5>Interesses</h5>
+              <?php if (!empty($userInterests)): ?>
+              <ul class="d-flex flex-wrap gap-2">
+                <?php foreach ($userInterests as $interest): ?>
+                <li class="chip"><?php echo $interest['Name']; ?></li>
+                <?php endforeach; ?>
+              </ul>
+              <?php else: ?>
+              <p class="my-4"><b>Uw interesses zijn momenteel onbekend.</b></p>
+              <?php endif; ?>
+            </div>
+
+            <!-- Preferences group -->
+            <div class="d-flex flex-column gap-3 mt-3">
+              <h5>Voorkeuren</h5>
+              <?php if (!empty($userPreferences)): ?>
+              <ul class="d-flex flex-wrap gap-2">
+                <?php foreach ($userPreferences as $preference): ?>
+                <li class="chip"><?php echo $preference['Name']; ?></li>
+                <?php endforeach; ?>
+              </ul>
+              <?php else: ?>
+              <p class="my-4"><b>Uw voorkeuren zijn momenteel onbekend.</b></p>
+              <?php endif; ?>
+            </div>
           </div>
         </div>
-
       </div>
-
-
     </section>
   </main>
 

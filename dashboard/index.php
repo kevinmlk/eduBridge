@@ -59,31 +59,124 @@
   <!-- Start main -->
   <main class="mb-5">
     <section>
-      <h2 class="text-center mt-5">Welkom terug, Lisa!</h2>
+      <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+        <h2>Welkom terug, Lisa!</h2>
+        <span class="tag-line theme-purple"></span>
+        <p class="mt-4">Traceer je educatieve reis vanaf het moment dat je begon tot waar je nu bent, en zie hoe ver je al gekomen bent!</p>
+      </div>
       <!-- Timeline container -->
-      <div class="timeline-wrapper">
-        <ul class="timeline">
-          <!-- Timeline item -->
-          <li data-date="Jan 7, 2022">
-            <span class="title">Mothers birthday</span>
-            <div class="data show">
-              <h3>Day you've been waiting for</h3>
-              <small>Jan 7, 2022</small>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <small class="close">Click to close</small>
+      <div class="timeline">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <!-- Timestamp -->
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                <h4>2018</h4>
+              </button>
+              <!-- Timestamp -->
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                <h4>2019</h4>
+              </button>
+              <!-- Timestamp -->
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                <h4>2020</h4>
+              </button>
+              <!-- Timestamp -->
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+                <h4>Toekomst</h4>
+              </button>
             </div>
-          </li>
-          <!-- Timeline item -->
-          <li data-date="Jan 7, 2022">
-            <span class="title">Mothers birthday</span>
-            <div class="data">
-              <h3>Day you've been waiting for</h3>
-              <small>Jan 7, 2022</small>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <small class="close">Click to close</small>
+            <!-- Carousel container -->
+            <div class="carousel-inner">
+              <!-- Carousel item -->
+              <div class="carousel-item active">
+                <div class="experience-slide-one row h-100 align-items-center">
+                  <!-- Image -->
+                  <div class="col-md-5">
+                    <div class="experience-slide-img">
+                      <img class="rounded img-fluid" src="./../assets/images/pillar-image-1.jpg" alt="2018 image">
+                    </div>
+                  </div>
+                  <!-- Text -->
+                  <div class="col-md-7">
+                    <div class="experience-slide-text">
+                      <h3>2018</h3>
+                      <p>Lorem ipsum </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- Carousel item -->
+              <div class="carousel-item">
+              <div class="experience-slide-one row h-100 align-items-center">
+                  <!-- Image -->
+                  <div class="col-md-5">
+                    <div class="experience-slide-img">
+                      <img class="rounded img-fluid" src="./../assets/images/pillar-image-2.jpg" alt="2018 image">
+                    </div>
+                  </div>
+                  <!-- Text -->
+                  <div class="col-md-7">
+                    <div class="experience-slide-text">
+                      <h3>2018</h3>
+                      <p>Lorem ipsum </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <!-- Carousel item -->
+              <div class="carousel-item">
+                <div class="experience-slide-one row h-100 align-items-center">
+                  <!-- Image -->
+                  <div class="col-md-5">
+                    <div class="experience-slide-img">
+                      <img class="rounded img-fluid" src="./../assets/images/pillar-image-3.jpg" alt="2018 image">
+                    </div>
+                  </div>
+                  <!-- Text -->
+                  <div class="col-md-7">
+                    <div class="experience-slide-text">
+                      <h3>2018</h3>
+                      <p>Lorem ipsum </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <!-- Carousel item -->
+              <div class="carousel-item">
+                <div class="experience-slide-one row h-100 align-items-center">
+                  <!-- Image -->
+                  <div class="col-md-5">
+                    <div class="experience-slide-img">
+                      <img class="rounded img-fluid" src="./../assets/images/pillar-image-3.jpg" alt="2018 image">
+                    </div>
+                  </div>
+                  <!-- Text -->
+                  <div class="col-md-7">
+                    <div class="experience-slide-text">
+                      <h3>2018</h3>
+                      <p>Lorem ipsum </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+          </div>
+        </div>
       </div>
 
     </section>
@@ -94,5 +187,6 @@
 
   <!-- Links JS scripts -->
   <script src="./../assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

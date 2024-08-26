@@ -1,4 +1,7 @@
 <?php
+  // Include bootstrap
+  include_once(__DIR__ . '/../bootstrap.php');
+
   // Check if user is loggedin
   session_start();
 
@@ -6,6 +9,9 @@
     header('Location: ./../login.php');
     exit;
   }
+
+  // Get all user accommodations
+  $userAccommodations = Accommodation::getUserAccommodations();
 ?><!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -69,69 +75,33 @@
         <p>Hier kunt u enkele relevante ondersteuningen vinden die gebasseerd zijn op uw profiel. Klik op "meer info" om meer informatie te verkrijgen over de tegemoetkomingen en haar voorwaarden.</p>
       </div>
 
-      <div class="glide">
+      <?php if (!empty($userAccommodations)): ?>
+      <div class="glide my-5">
         <div class="glide__track" data-glide-el="track">
           <ul id="info-hub-glides-container" class="glide__slides">
-            <!-- Opleidingsverlof -->
+            <?php foreach($userAccommodations as $accommodation): ?>
             <li class="glide__slide">
               <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Opleidingsverlof</h5>
-                  <p class="card-text">Onder bepaalde voorwaarden, kan je afwezig zijn van het werk om een opleiding te volgen.</p>
-                  <a href="#" class="btn btn-link">Meer info</a>
+                <div class="card-body py-4">
+                  <h5 class="card-title"><?php echo $accommodation['Name']; ?></h5>
+                  <p class="card-text"><?php echo $accommodation['Description']; ?></p>
+                  <a href="<?php echo $accommodation['Link']; ?>" class="btn btn-link" target="_blank">Meer info</a>
                 </div>
               </div>
             </li>
-            <!-- Opleidingsverlof -->
-            <li class="glide__slide">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Opleidingsverlof</h5>
-                  <p class="card-text">Onder bepaalde voorwaarden, kan je afwezig zijn van het werk om een opleiding te volgen.</p>
-                  <a href="#" class="btn btn-link">Meer info</a>
-                </div>
-              </div>
-            </li>
-            <!-- Opleidingsverlof -->
-            <li class="glide__slide">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Opleidingsverlof</h5>
-                  <p class="card-text">Onder bepaalde voorwaarden, kan je afwezig zijn van het werk om een opleiding te volgen.</p>
-                  <a href="#" class="btn btn-link">Meer info</a>
-                </div>
-              </div>
-            </li>
-            <!-- Opleidingsverlof -->
-            <li class="glide__slide">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Opleidingsverlof</h5>
-                  <p class="card-text">Onder bepaalde voorwaarden, kan je afwezig zijn van het werk om een opleiding te volgen.</p>
-                  <a href="#" class="btn btn-link">Meer info</a>
-                </div>
-              </div>
-            </li>
-            <!-- Opleidingsverlof -->
-            <li class="glide__slide">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Opleidingsverlof</h5>
-                  <p class="card-text">Onder bepaalde voorwaarden, kan je afwezig zijn van het werk om een opleiding te volgen.</p>
-                  <a href="#" class="btn btn-link">Meer info</a>
-                </div>
-              </div>
-            </li>
+            <?php endforeach; ?>
           </ul>
         </div>
 
       <div class="glide__arrows d-flex gap-2 justify-content-center mt-4" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
       </div>
 
     </div>
-
+    <?php else: ?>
+      <h5>Er zijn momenteel geen tegemoetkomingen voor u beschikbaar.</h5>
+    <?php endif; ?>
 
 
     </section>
@@ -147,7 +117,22 @@
     new Glide('.glide', {
       type: 'carousel',
       startAt: 0,
-      perView: 4
+      perView: 3,
+      gap: 16,
+      autoplay: 3000,
+      bound: true,
+      peek: {
+        before: 100,
+        after: 50
+      },
+      breakpoints: {
+        1024: {
+          perView: 2
+        },
+        600: {
+          perView: 1
+        }
+      }
     }).mount()
   </script>
 

@@ -688,6 +688,13 @@ position: absolute;
     justify-content: center;
   }
 
+  .glide__arrows .glide__arrow.glide__arrow--left {
+    border: none;
+    background-color: var(--theme-green);
+    color: var(--theme-black-2);
+    font-size: 1.4em;
+  }
+
   #footer-links {
     padding-left: 1.5rem;
     padding-right: 1.5rem;

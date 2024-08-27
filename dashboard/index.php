@@ -24,13 +24,13 @@
   <title>Tijdslijn | eduBridge Belgium</title>
 </head>
 <body>
-   <!-- Start header content -->
+  <!-- Start header content -->
   <header class="mb-4">
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
         <!-- Language switcher container -->
-        <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
+        <div id="top-navbar" class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
           <ul class="language-switcher d-flex gap-2 p-0 mb-0">
             <li><a href="#">EN</a></li>
             <li><a href="#">FR</a></li>
@@ -44,8 +44,9 @@
         </div>
 
         <!-- Navigation container -->
-        <div class="d-flex w-100 justify-content-between align-items-center">
-          <a href="#" class="navbar-brand"><img class="me-2" src="./../assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
+        <div id="navigation-container-alt" class="d-flex w-100 justify-content-between align-items-center">
+          <a href="./index.php" class="navbar-brand"><img class="me-2" src="./../assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
+          <a href="./index.php" class="navbar-brand-small"><img class="me-2" src="./../assets/images/logo/logo-b.png" alt="eduBridge logo"></a>
             <ul class="nav d-flex gap-2">
               <li class="nav-item"><a href="#" aria-page="current" class="nav-link active">Tijdslijn</a></li>
               <li class="nav-item"><a href="./simulator.php" class="nav-link">Simulator</a></li>
@@ -77,17 +78,13 @@
                 <i class="bi bi-bullseye"></i>
               </button>
               <!-- Timestamp -->
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
-                <h4>2019</h4>
-                <i class="bi bi-bullseye"></i>
-              </button>
               <!-- Timestamp -->
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 3">
                 <h4>2020</h4>
                 <i class="bi bi-bullseye"></i>
               </button>
               <!-- Timestamp -->
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4">
                 <h4>Toekomst</h4>
                 <i class="bi bi-bullseye"></i>
               </button>
@@ -100,14 +97,17 @@
                   <!-- Image -->
                   <div class="col-md-5">
                     <div class="experience-slide-img">
-                      <img class="rounded img-fluid" src="./../assets/images/pillar-image-1.jpg" alt="2018 image">
+                      <img class="rounded img-fluid" src="./../assets/images/timeline-2.png" alt="2018 image">
                     </div>
                   </div>
                   <!-- Text -->
                   <div class="col-md-7">
                     <div class="experience-slide-text">
-                      <h3>2018</h3>
-                      <p>Lorem ipsum </p>
+                      <h3>Schoolverleden</h3>
+                      <p>In het middelbaar heb je succesvol een secundair onderwijs diploma behaald. Hierop zullen wij ons basseren om aan jou nieuwe studie voorstellingen te geven.</p>
+                      <ul class="mt-2">
+                        <li><i class="bi bi-mortarboard me-2"></i>Secundair onderwijs TSO: 3de graad Commerciële organisatie</li>
+                      </ul>
                     </div>
                   </div>
                   
@@ -119,19 +119,22 @@
                   <!-- Image -->
                   <div class="col-md-5">
                     <div class="experience-slide-img">
-                      <img class="rounded img-fluid" src="./../assets/images/pillar-image-2.jpg" alt="2018 image">
+                      <img class="rounded img-fluid" src="./../assets/images/timeline-1.png" alt="2018 image">
                     </div>
                   </div>
                   <!-- Text -->
                   <div class="col-md-7">
                     <div class="experience-slide-text">
-                      <h3>2018</h3>
-                      <p>Lorem ipsum </p>
+                      <h3>Hogeschool</h3>
+                      <p>Na het middelbaar ben je direct begonnen aan een graduaatsopleiding om je skills verder aan te scherpen voor jouw carriére. Met dit diploma zullen wij rekeningen houden voor toekomstige voortstellingen.</p>
+                      <ul class="mt-2">
+                        <li><i class="bi bi-mortarboard me-2"></i>Graduaat in Winkelmanagement</li>
+                      </ul>
                     </div>
                   </div>
                   
                 </div>
-              </div>
+              </div>  
 
               <!-- Carousel item -->
               <div class="carousel-item">
@@ -139,48 +142,25 @@
                   <!-- Image -->
                   <div class="col-md-5">
                     <div class="experience-slide-img">
-                      <img class="rounded img-fluid" src="./../assets/images/pillar-image-3.jpg" alt="2018 image">
+                      <img class="rounded img-fluid mt-2 me-2" src="./../assets/images/timeline-1.png" alt="2018 image">
                     </div>
                   </div>
                   <!-- Text -->
                   <div class="col-md-7">
                     <div class="experience-slide-text">
-                      <h3>2018</h3>
-                      <p>Lorem ipsum </p>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <!-- Carousel item -->
-              <div class="carousel-item">
-                <div class="experience-slide-one row h-100 align-items-center">
-                  <!-- Image -->
-                  <div class="col-md-5">
-                    <div class="experience-slide-img">
-                      <img class="rounded img-fluid" src="./../assets/images/pillar-image-3.jpg" alt="2018 image">
-                    </div>
-                  </div>
-                  <!-- Text -->
-                  <div class="col-md-7">
-                    <div class="experience-slide-text">
-                      <h3>2018</h3>
-                      <p>Lorem ipsum </p>
+                      <h3>Plannen voor je toekomst</h3>
+                      <p>Gebasseerd op jouw doelen en studieverleden, stellen wij de volgende opleidingen voor waarvoor je in aanmerking zou kunnen komen voor tegemoetkoming.</p>
+                      <ul class="mt-2">
+                        <li><i class="bi bi-mortarboard me-2"></i>Opleiding Syntra: Accountant/boekhouder</li>
+                        <li><i class="bi bi-mortarboard me-2"></i>Graduaat in accountancy administration</li>
+                      </ul>
+                      <a href="simulator.php" class="btn theme-green mt-3">Start de simulator</a>
                     </div>
                   </div>
                   
                 </div>
               </div>
             </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button> -->
           </div>
         </div>
       </div>

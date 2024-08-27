@@ -35,17 +35,20 @@
   <link rel="stylesheet" href="./assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
   <!-- Tab title -->
   <title>Aanmelden | eduBridge Belgium</title>
 </head>
 <body>
+  <!-- Start header content -->
   <!-- Start header content -->
   <header class="mb-4">
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
         <!-- Language switcher container -->
-        <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
+        <div id="top-navbar" class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
           <ul class="language-switcher d-flex gap-2 p-0 mb-0">
             <li><a href="#">EN</a></li>
             <li><a href="#">FR</a></li>
@@ -58,8 +61,9 @@
         </div>
 
         <!-- Navigation container -->
-        <div class="d-flex w-100 justify-content-between align-items-center">
+        <div id="navigation-container" class="d-flex w-100 justify-content-between align-items-center">
           <a href="index.php" class="navbar-brand"><img class="me-2" src="./assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
+          <a href="index.php" class="navbar-brand-small"><img class="me-2" src="./assets/images/logo/logo-b.png" alt="eduBridge logo"></a>
         </div>
       </div>
     </nav>
@@ -69,8 +73,8 @@
   <main class="d-flex flex-column gap-5 mb-5 pb-5">
 
     <!-- Intro section -->
-     <section class="container d-flex justify-content-between align-items-center mt-5 mb-5">
-      <div class="">
+     <section id="login-intro" class="container d-flex justify-content-between align-items-center mt-5 mb-5">
+      <div>
         <div>
           <h2>Welkom terug</h2>
           <span class="tag-line theme-blue"></span>
@@ -91,38 +95,14 @@
         </form>
         <hr class="my-5">
         <p class="mb-3">Of meld je aan met:</p>
-        <div class="d-flex gap-3">
+        <div id="login-buttons" class="d-flex gap-3">
           <a href="#" id="itsme-button" class="btn btn-secondary"><img class="me-2" src="./assets/images/icons/itsme-auth.png" alt="">Aanmelden met itsme</a>
           <a href="#" id="id-button" class="btn btn-secondary"><img class="me-2" src="./assets/images/icons/id-auth-alt.png" alt="">Aanmelden met eID</a>
         </div>
       </div>
       
       <!-- Carousel -->
-      <div id="login-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/images/login-slider-1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Student in het hoger onderwijs</h5>
-              <p>Is je kind tussen 18 en 25 jaar en volgt het hoger onderwijs? Dan kan het nog recht hebben op een Groeipakket onder voorwaarden.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/login-slider-2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Sociale toeslag Groeipakket</h5>
-              <p>100.000 extra kinderen hebben recht op sociale toeslag van het Groeipakket.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/login-slider-3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Geen wachtijden meer voor zorgtoeslag</h5>
-              <p>Nu de achterstand is weggewerkt, wordt er gefocust op het wegwerken van drempels bij aanvragen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <img id="login-image" src="./assets/images/login-image.jpg" alt="" class="rounded">
      </section>
   </main>
 

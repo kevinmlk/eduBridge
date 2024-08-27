@@ -34,11 +34,13 @@
   <link rel="stylesheet" href="./../assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./../assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../assets/images/favicon/favicon.ico">
   <!-- Tab title -->
-  <title>Welkom bij eduBridge | eduBridge Belgium</title>
+  <title>Profiel | eduBridge Belgium</title>
 </head>
 <body>
-   <!-- Start header content -->
+  <!-- Start header content -->
   <header class="mb-4">
     <!-- Navbar -->
     <nav class="navbar">
@@ -59,10 +61,10 @@
 
         <!-- Navigation container -->
         <div id="navigation-container-alt" class="d-flex w-100 justify-content-between align-items-center">
-          <a href="#" class="navbar-brand"><img class="me-2" src="./../assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
-          <a href="#" class="navbar-brand-small"><img class="me-2" src="./../assets/images/logo/logo-b.png" alt="eduBridge logo"></a>
+          <a href="./index.php" class="navbar-brand"><img class="me-2" src="./../assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
+          <a href="./index.php" class="navbar-brand-small"><img class="me-2" src="./../assets/images/logo/logo-b.png" alt="eduBridge logo"></a>
             <ul class="nav d-flex gap-2">
-              <li class="nav-item"><a href="./index.php" class="nav-link">Timeline</a></li>
+              <li class="nav-item"><a href="./index.php" class="nav-link">Tijdslijn</a></li>
               <li class="nav-item"><a href="./simulator.php" class="nav-link">Simulator</a></li>
               <li class="nav-item"><a href="./procedures.php" class="nav-link">Procedures</a></li>
               <li class="nav-item"><a href="./info-hub.php" class="nav-link">Info hub</a></li>
@@ -89,7 +91,7 @@
         <!-- Profile info -->
         <div class="card">
           <div class="card-body">
-            <h3 class="card-title">Profielgegevens</h3>
+            <h3 class="card-title d-flex justify-content-between">Profielgegevens<i class="bi bi-person-circle theme-blue d-flex align-items-center fs-5 py-1 px-2 rounded-circle"></i></h3>
             <p class="card-subtitle">
               Bepaalde informatie hebben wij van uw burgerprofiel gehaald en kunt u mogelijk niet aanpassen.
             </p>
@@ -119,7 +121,7 @@
         <!-- Contact info -->
         <div class="card">
           <div class="card-body">
-            <h3 class="card-title">Contactgegevens</h3>
+            <h3 class="card-title d-flex justify-content-between">Contactgegevens<i class="bi bi-envelope-at theme-blue d-flex align-items-center fs-5 py-1 px-2 rounded-circle"></i></h3>
             <p class="card-subtitle">
             Hier krijgt je een verzameling van al jouw bewaarde contactgegevens. Je kunt bestaande gegevens wijzigen of nieuwe contactgegevens toevoegen.
             </p>
@@ -139,14 +141,14 @@
                 <span><?php echo $userInfo['Address']; ?></span>
               </li>
             </ul>
-            <a class="btn btn-secondary my-3" href="">Contactgegevens wijzigen</a>
+            <a class="btn btn-secondary my-3 d-none" href="">Contactgegevens wijzigen</a>
           </div>
         </div>
 
         <!-- Education info -->
         <div class="card">
           <div class="card-body">
-            <h3 class="card-title">Educatie verleden</h3>
+            <h3 class="card-title d-flex justify-content-between">Educatie verleden<i class="bi bi-mortarboard theme-blue d-flex align-items-center fs-5 py-1 px-2 rounded-circle"></i></h3>
             <p class="card-subtitle">
             Bepaalde informatie hebben wij van uw burgerprofiel gehaald, je kunt eventueel nog zelf behaalde diploma’s/getuigschriften toevoegen.
             </p>
@@ -165,14 +167,14 @@
             <?php else: ?>
             <p class="my-4"><b>Uw educatie verleden is momenteel onbekend.</b></p>
             <?php endif; ?>
-            <a class="btn btn-secondary my-3" href="">Educatie verleden wijzigen</a>
+            <a class="btn btn-secondary my-3 d-none" href="">Educatie verleden wijzigen</a>
           </div>
         </div>
         
         <!-- Profile info -->
         <div class="card">
           <div class="card-body">
-            <h3 class="card-title">Interesse's & voorkeuren</h3>
+            <h3 class="card-title d-flex justify-content-between">Interesse's & voorkeuren<i class="bi bi-heart theme-blue d-flex align-items-center fs-5 py-1 px-2 rounded-circle"></i></h3>
             <p class="card-subtitle">
               Bepaalde informatie hebben wij van uw burgerprofiel gehaald en kunt u mogelijk niet aanpassen.
             </p>

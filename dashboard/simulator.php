@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="./../assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./../assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../assets/images/favicon/favicon.ico">
   <!-- Tab title -->
   <title>Simulator | eduBridge Belgium</title>
 </head>
@@ -28,7 +30,7 @@
     <nav class="navbar">
       <div class="container">
         <!-- Language switcher container -->
-        <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
+        <div id="top-navbar" class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
           <ul class="language-switcher d-flex gap-2 p-0 mb-0">
             <li><a href="#">EN</a></li>
             <li><a href="#">FR</a></li>
@@ -42,16 +44,16 @@
         </div>
 
         <!-- Navigation container -->
-        <div class="d-flex w-100 justify-content-between align-items-center">
-          <a href="index.php" class="navbar-brand"><img class="me-2" src="./../assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
-          <a href="index.php" class="navbar-brand-small"><img class="me-2" src="./../assets/images/logo/logo-b.png" alt="eduBridge logo"></a>
-          <ul class="nav d-flex gap-2">
-            <li class="nav-item"><a href="./index.php" class="nav-link">Tijdslijn</a></li>
-            <li class="nav-item"><a href="#" aria-current="page" class="nav-link active">Simulator</a></li>
-            <li class="nav-item"><a href="./procedures.php" class="nav-link">Procedures</a></li>
-            <li class="nav-item"><a href="./info-hub.php" class="nav-link">Info hub</a></li>
-            <li class="nav-item"><a href="./profile.php" class="nav-link">Profiel</a></li>
-          </ul>
+        <div id="navigation-container-alt" class="d-flex w-100 justify-content-between align-items-center">
+          <a href="./index.php" class="navbar-brand"><img class="me-2" src="./../assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
+          <a href="./index.php" class="navbar-brand-small"><img class="me-2" src="./../assets/images/logo/logo-b.png" alt="eduBridge logo"></a>
+            <ul class="nav d-flex gap-2">
+              <li class="nav-item"><a href="./index.php" class="nav-link">Tijdslijn</a></li>
+              <li class="nav-item"><a href="#" aria-page="current" class="nav-link active">Simulator</a></li>
+              <li class="nav-item"><a href="./procedures.php" class="nav-link">Procedures</a></li>
+              <li class="nav-item"><a href="./info-hub.php" class="nav-link">Info hub</a></li>
+              <li class="nav-item"><a href="./profile.php" class="nav-link">Profiel</a></li>
+            </ul>
         </div>
       </div>
     </nav>

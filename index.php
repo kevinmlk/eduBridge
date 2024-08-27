@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="./assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
   <!-- Tab title -->
   <title>Welkom bij eduBridge | eduBridge Belgium</title>
 </head>

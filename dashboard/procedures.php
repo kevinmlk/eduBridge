@@ -1,4 +1,6 @@
 <?php
+  // Include bootstrap
+  include_once(__DIR__ . '/../bootstrap.php');
   // Check if user is loggedin
   session_start();
 
@@ -6,6 +8,9 @@
     header('Location: ./../login.php');
     exit;
   }
+
+  // Get user procedures
+  $procedures = Procedure::getUserProcedures();
 ?><!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -18,6 +23,8 @@
   <link rel="stylesheet" href="./../assets/bootstrap/icons/font/bootstrap-icons.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./../assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./../assets/images/favicon/favicon.ico">
   <!-- Tab title -->
   <title>Procedures | eduBridge Belgium</title>
 </head>
@@ -28,7 +35,7 @@
     <nav class="navbar">
       <div class="container">
         <!-- Language switcher container -->
-        <div class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
+        <div id="top-navbar" class="d-flex w-100 align-items-center justify-content-between border-bottom pb-3 mb-4 mt-2">
           <ul class="language-switcher d-flex gap-2 p-0 mb-0">
             <li><a href="#">EN</a></li>
             <li><a href="#">FR</a></li>
@@ -42,7 +49,7 @@
         </div>
 
         <!-- Navigation container -->
-        <div class="d-flex w-100 justify-content-between align-items-center">
+        <div id="navigation-container-alt" class="d-flex w-100 justify-content-between align-items-center">
           <a href="index.php" class="navbar-brand"><img class="me-2" src="./../assets/images/logo/logo-belgium.png" alt="eduBridge logo"></a>
           <a href="index.php" class="navbar-brand-small"><img class="me-2" src="./../assets/images/logo/logo-b.png" alt="eduBridge logo"></a>
           <ul class="nav d-flex gap-2">
@@ -61,63 +68,54 @@
   <main>
     <!-- Procedures section -->
     <section id="intro-section" class="container  mt-5 mb-5">
-        <div>
-          <h2>Aanvragen op één plek</h2>
-          <span class="tag-line theme-purple"></span>
-        </div>
-
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="mt-4">Al je procedure aanvragen op één handige hub. Voeg nieuwe  procedures toe en krijg inzicht in de voortgang van elke aanvraag.</p>
-          <div class="d-flex gap-3">
-            <a class="btn btn-outline-info" href="#"><i class="bi bi-mortarboard me-2"></i>Opleiding</a>
-            <a class="btn btn-secondary" href="#">Procedure toevoegen</a>
-          </div>
-        </div>
-
-        <div class="d-flex flex-column gap-3 mt-4">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-people me-2"></i>Volwassenprofiel</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-person me-2"></i>Kinderprofiel</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-        <div class="row">
-      <div class="col-md-3 mb-4">
-        <div class="card">
-          <img src="./../assets/images/aanvraag.png" class="card-img-top" alt="Studietoelagen">
-          <div class="card-body">
-            <h5 class="card-title">Studietoelagen</h5>
-            <p class="card-text">Aanvraag studietoelagen voor het komende academiejaar werd ingediend</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span>2023 - 2024</span>
-            </div>
-            <div class="circular-chart">
-              <svg viewBox="0 0 36 36" class="circular-chart">
-                <path class="circle-bg"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                <path class="circle"
-                  stroke-dasharray="30, 100"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                <text x="18" y="20.35" class="percentage">30%</text>
-              </svg>
-            </div>
-            <a href="./info.php" class="btn btn-outline-black w-100 mt-2">Meer info</a>
-          </div>
-        </div>
+      <div>
+        <h2>Aanvragen op één plek</h2>
+        <span class="tag-line theme-purple"></span>
       </div>
-    </div>
-        </div>
 
-     </section>
+      <div id="procedures-intro" class="d-flex justify-content-between align-items-center">
+        <p class="mt-4">Al je procedure aanvragen op één handige hub. Voeg nieuwe  procedures toe en krijg inzicht in de voortgang van elke aanvraag.</p>
+        <a class="btn btn-secondary" href="#">Procedure toevoegen</a>
+      </div>
+
+      <div class="d-flex flex-column gap-3 mt-4">
+        <ul class="nav nav-pills d-flex gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-people me-2"></i>Volwassenprofiel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-person me-2"></i>Kinderprofiel</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Procedures container -->
+      <?php if (!empty($procedures)): ?>
+      <div id="procedures-cards-container" class="d-flex flex-wrap gap-5 mt-5">
+        <?php foreach ($procedures as $procedure): ?>
+        <!-- Profile info -->
+        <div class="card rounded-4">
+          <div class="position-relative">
+            <img src="./../assets/images/procedure-1.jpg" class="card-img-top rounded-4" alt="">
+            <i class="bi bi-person-circle theme-blue py-1 px-2 rounded-circle position-absolute top-0 start-0 mt-3 ms-3"></i>
+          </div>
+          <div class="card-body d-flex flex-column gap-2">
+            <h5 class="card-title d-flex justify-content-between"><?php echo $procedure['Title']; ?></h5>
+            <p class="card-subtitle fs-6">
+              <?php echo $procedure['Period']; ?>
+            </p>
+            <p class="card-text">
+              <?php echo $procedure['DescriptionStatus']; ?>
+            </p>
+            <a href="procedure-details.php?id=<?php echo $procedure['ProcedureId']; ?>" class="btn btn-secondary align-self-end mt-3">Meer info</a>
+          </div>
+        </div>
+        <?php endforeach; ?>
+      </div>
+      <?php else: ?>
+      <h5>Er zijn momenteel geen procedures beschikbaar.</h5>
+      <?php endif; ?>
+    </section>
 
 
     

@@ -248,6 +248,10 @@ footer a {
   border-radius: 12px;
 }
 
+#login-image {
+  max-width: 600px;
+}
+
 .simulation-option {
   width: fit-content;
 }
@@ -339,6 +343,10 @@ footer a {
   font-family: 'Montserrat Medium', sans-serif;
 }
 
+#login-carousel img {
+  max-width: 500px;
+}
+
 .btn.btn-link {
   text-decoration: none;
 }
@@ -412,7 +420,7 @@ position: absolute;
 }
 
 .timeline .carousel-indicators button.active i {
-  color: var(--theme-blue);
+  color: var(--theme-green);
 }
 
 .timeline .carousel-indicators button.active h4 {
@@ -462,8 +470,36 @@ position: absolute;
   
 }
 
+#procedures-cards-container .card {
+  width: 300px;
+}
+
+.nav-pills .nav-item {
+  border-radius: 8px;
+  border: 1px solid var(--theme-black-2);
+}
+
+.nav-pills .nav-item .nav-link.active {
+  border: none !important;
+  background-color: var(--theme-blue);
+  color: var(--theme-black-1);
+}
+.nav-pills .nav-item .nav-link.active:after {
+  content: none;
+}
+
 #info-hub-glides-container .glide__slide {
   max-width: 375px;
+}
+
+.glide__arrows .glide__arrow {
+  border: none;
+  color: var(--theme-black-2);
+  background-color: var(--theme-green);
+  border-radius: 50%;
+  font-size: 1.4em; 
+  font-weight: 800;
+  padding: .15rem .75rem;
 }
 
 /* #info-hub-glides-container .glide__arrows .glide__arrow {
@@ -528,6 +564,16 @@ position: absolute;
     gap: 3rem;
   }
 
+  #login-intro {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #procedure-details-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   #profile-cards-container {
     justify-content: center;
     align-items: center;
@@ -561,7 +607,7 @@ position: absolute;
 
   .pillar {
     height: 400px;
-  }
+  } 
 
   #footer-navigation {
     gap: 1rem !important;
@@ -596,6 +642,17 @@ position: absolute;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+
+  #procedures-intro {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 2rem;
+  }
+
+  #procedures-intro a {
+    margin-bottom: 2rem;
   }
 
   #footer-navigation {
@@ -645,6 +702,21 @@ position: absolute;
   .navbar-brand-small img {
     height: 36px;
   }
+
+  #login-image {
+    max-width: 500px;
+  }
+
+  .timeline button h4 {
+    font-size: 1em !important;
+  }
+
+  #procedure-card-title {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -684,15 +756,21 @@ position: absolute;
     width: 350px;
   }
 
+  #login-image {
+    max-width: 350px;
+  }
+
+  #login-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .nav {
     justify-content: center;
   }
 
-  .glide__arrows .glide__arrow.glide__arrow--left {
-    border: none;
-    background-color: var(--theme-green);
-    color: var(--theme-black-2);
-    font-size: 1.4em;
+  .nav.nav-pills {
+    justify-content: flex-start;
   }
 
   #footer-links {
